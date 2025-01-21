@@ -1,0 +1,11 @@
+{
+    "Nav": {
+        "Navlist": {
+            "About": "About",
+            "Contact": "Contact",
+            "Booking": "Booking",
+            "Gallery": "Gallery",
+            "Faq": "Faq"
+        }
+    }
+}

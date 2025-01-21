@@ -17,7 +17,7 @@ export default function DropdownView({navList}: {navList: NavList[]}){
             <DropdownMenu.Trigger>
                 <Button variant="surface">
             
-                    <RxHamburgerMenu size={30} />
+                    {/*<RxHamburgerMenu size={30} />*/}
                 </Button>
             </DropdownMenu.Trigger>
             <DropdownMenu.Content side='bottom'>

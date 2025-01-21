@@ -5,9 +5,9 @@ import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 import { Calendar } from '@fullcalendar/core';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
-export default function GCalendar() {
+export default function GCalendar({api}: {api: string|undefined}) {
 
-    
+      
 
       const myGoogleCalendarID = "wattsmainsanglais@gmail.com";
 
@@ -18,7 +18,7 @@ export default function GCalendar() {
     <FullCalendar
       plugins={[ dayGridPlugin, googleCalendarPlugin ]}
       initialView="dayGridMonth"
-      googleCalendarApiKey="AIzaSyDjyGPeqouoFdc7qTbOAWb-MD84rdjfi_E"
+      googleCalendarApiKey={api}
       eventSources={[{ googleCalendarId: myGoogleCalendarID }]}
     />
     </div>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 
 import "./globals.css";
-import "@radix-ui/themes/styles.css";
+
 import { Params } from "next/dist/server/request/params";
 
 import NavBar from "./_components/navigation/NavBar";
@@ -24,8 +24,13 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <head>
+   
+      </head>
       <body>
-        <NavBar locale={locale} />
+       
+        <NavBar locale={locale} /> 
+ 
         {children}
       </body>
     </html>

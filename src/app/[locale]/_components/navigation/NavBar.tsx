@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react';
 
 import { Theme, Flex, Box, Text, TabNav } from "@radix-ui/themes"
+import "@radix-ui/themes/styles.css";
 
 import Image from "next/image";
 

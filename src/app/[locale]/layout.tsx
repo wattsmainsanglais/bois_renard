@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
 
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import "./globals.css";
 
 import { Params } from "next/dist/server/request/params";

@@ -21,6 +21,10 @@ body {
   font-size: 1em;
 }
 
+.custom-img{
+  background-image: url("/logo-artwork/off-white/GDBR_logo-16.png")
+}
+
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #0d6efd;

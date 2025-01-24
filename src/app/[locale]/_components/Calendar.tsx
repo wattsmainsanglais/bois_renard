@@ -9,29 +9,26 @@ import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
 
 
-export default function GCalendar({api}: {api: string|undefined}) {
+export default function GCalendar({api, calendarId, name}: {api: string|undefined , calendarId: string | undefined, name: string}) {
 
 
 
-      const myGoogleCalendarID = "wattsmainsanglais@gmail.com";
+   
       // eventSources={[{ googleCalendarId: myGoogleCalendarID }]}
 
 
   return (
-    <div style={{width: '40%'}}>
+    <div style={{width: '100%'}}>
+    <h2>{name}</h2>
     <FullCalendar
       plugins={[ dayGridPlugin, googleCalendarPlugin, bootstrap5Plugin ]}
       initialView="dayGridMonth"
       eventColor='#378006'
+      contentHeight={350}
+      aspectRatio={2}
       themeSystem='bootstrap5'
-     
-      events={[
-        {
-          id: 'a',
-          title: 'my event',
-          start: '2025-01-23'
-        }
-      ]}
+      googleCalendarApiKey={api}
+      eventSources={[{ googleCalendarId: calendarId }]}
       
     />
    

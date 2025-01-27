@@ -9,6 +9,7 @@ import "./globals.css";
 import { Params } from "next/dist/server/request/params";
 
 import NavBar from "./_components/navigation/NavBar";
+import Footer from "./_components/footer/Footer";
 
 
 
@@ -30,11 +31,12 @@ export default async function RootLayout({
       <head>
    
       </head>
-      <body>
+      <body className="flex flex-col items-center">
        
         <NavBar locale={locale} /> 
  
         {children}
+        <Footer />
       </body>
     </html>
   );

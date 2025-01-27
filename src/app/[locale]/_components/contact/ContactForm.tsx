@@ -12,6 +12,7 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
+  import { Input } from "@/components/ui/input"
 
 
 export default function ContactForm({trans}: {trans: {[key: string]: string}}  ) {
@@ -53,10 +54,10 @@ export default function ContactForm({trans}: {trans: {[key: string]: string}}  )
                 <form action={submit} ref={ref}>  
                     
                     <div className="flex flex-col items-center">
-                        <input name='name' placeholder="name"></input>
-                        <input name='email' placeholder="email"></input> 
-                        <input name='message' placeholder="message"></input>
-                        <input name='tel' placeholder="tel"></input>
+                        <Input name='name' placeholder="name"></Input>
+                        <Input name='email' placeholder="email"></Input> 
+                        <Input name='message' placeholder="message"></Input>
+                        <Input name='tel' placeholder="tel"></Input>
   
                     </div>
                    

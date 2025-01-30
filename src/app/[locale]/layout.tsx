@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 
-
-
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import "./globals.css";
@@ -33,7 +31,7 @@ export default async function RootLayout({
       </head>
       <body className="flex flex-col items-center">
        
-        <NavBar locale={locale} /> 
+        {/*<NavBar locale={locale} />*/ }
  
         {children}
         <Footer />

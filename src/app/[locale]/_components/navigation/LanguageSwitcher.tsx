@@ -5,8 +5,17 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { Select, DropdownMenu, Button } from "@radix-ui/themes";
-import { ChevronDownIcon } from "@radix-ui/react-icons";
+import { RxChevronDown } from "react-icons/rx";
+import { Button } from "@/components/ui/button";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+  } from "@/components/ui/dropdown-menu"
+
 
 export default function LanguageSwitcher({locale}: {locale: string}){
 
@@ -15,21 +24,21 @@ export default function LanguageSwitcher({locale}: {locale: string}){
 
     return (
         <>
-        <DropdownMenu.Root modal={false} >
-            <DropdownMenu.Trigger>
-                <Button variant="ghost" size='2' >
-                    {locale}<ChevronDownIcon/>
-                </Button>
-            </DropdownMenu.Trigger>
+        <DropdownMenu >
+            <DropdownMenuTrigger asChild>
+                    <div className="flex justify-between items-center text-white w-[3vw]">
+                    {locale}<RxChevronDown className="text-white"/>
+                    </div>
+            </DropdownMenuTrigger>
             
-                <DropdownMenu.Content size='2' side='bottom'>
+            <DropdownMenuContent >
                         
-                        <Link href={'/en'+currentRoute}><DropdownMenu.Item >en</DropdownMenu.Item></Link>
-                        <Link href={'/fr'+currentRoute}><DropdownMenu.Item >fr</DropdownMenu.Item></Link>
+                        <Link href={'/en'+currentRoute}><DropdownMenuItem >en</DropdownMenuItem></Link>
+                        <Link href={'/fr'+currentRoute}><DropdownMenuItem >fr</DropdownMenuItem></Link>
                         
                    
-                </DropdownMenu.Content>
-        </DropdownMenu.Root>
+            </DropdownMenuContent>
+        </DropdownMenu>
         
         </>
 

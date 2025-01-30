@@ -1,10 +1,21 @@
 'use client'
 
 import { useRouter } from "next/router"
-import { Text, TabNav } from "@radix-ui/themes";
-import { useState, useEffect } from "react";
+import {
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuIndicator,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+    NavigationMenuViewport,
+    navigationMenuTriggerStyle
+  } from "@/components/ui/navigation-menu"
+ import Link from "next/link";
 
-import { tabNavLinkPropDefs } from "@radix-ui/themes/props";
+
+
 
 
 import { NavList } from "./NavBar";
@@ -15,13 +26,17 @@ export default function TabView({navList}: {navList: NavList[]}){
 
   
     return (
-        <TabNav.Root size='2'  >
-        {navList.map((item, index) => (
-            
-            <TabNav.Link  key={index} href={`#${item.id}`}><Text size='4'>{item.title}</Text></TabNav.Link>
-        ))}
-        
-        </TabNav.Root>
+        <NavigationMenu  >
+            <NavigationMenuList>
+                {navList.map((item, index) => (
+                  <NavigationMenuItem key={index}> 
+                    <Link href={`#${item.id}`} legacyBehavior passHref>
+                        <NavigationMenuLink className="group inline-flex h-9 w-max items-center justify-center bg-none px-4 py-2 text-sm text-white font-medium hover:border-b hover:border-b-solid hover:border-green-300 transition-all " ><p className="text-lg  hover:text-green-100 active:text-green-300  active:text-lg transition-all">{item.title}</p></NavigationMenuLink>
+                    </Link>
+                  </NavigationMenuItem> 
+                ))}
+            </NavigationMenuList>
+        </NavigationMenu>
     )
 
 }

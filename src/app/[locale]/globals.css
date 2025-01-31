@@ -1,15 +1,13 @@
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind base;
 
 @media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
     --fc-small-font-size: .85em;
-    --fc-button-bg-color:rgb(44, 80, 55);
-  
-
+    --fc-button-bg-color:#2c5037;
   }
 }
 
@@ -98,12 +96,5 @@ body {
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
+
 

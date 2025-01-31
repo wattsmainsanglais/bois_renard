@@ -8,16 +8,18 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
+import { Card, CardContent } from "@/components/ui/card"
+
 
 export default function CarouselWrapper(){
 
     return(
 
-        <div className=" flex justify-center w-2/5 h-[50vh] mt-5" >
+        <div className=" flex justify-center w-2/5 h-[75vh] mt-5 mb-12" >
 
-            <Carousel>
+            <Carousel >
                 <CarouselContent>
-                    <CarouselItem >
+                    <CarouselItem  >
                         <Image 
                             src="https://yavuzceliker.github.io/sample-images/image-1.jpg"
                             alt="Test"
@@ -33,8 +35,8 @@ export default function CarouselWrapper(){
                                 height={400}
                                
                             />
-                    </CarouselItem>
-                    <CarouselItem >
+                    </CarouselItem >
+                    <CarouselItem  >
                         <Image 
                                 src="https://yavuzceliker.github.io/sample-images/image-3.jpg"
                                 alt="Test"

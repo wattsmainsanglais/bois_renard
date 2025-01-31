@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import "./globals.css";
 
+
 import { Params } from "next/dist/server/request/params";
 
 import NavBar from "./_components/navigation/NavBar";
@@ -27,14 +28,14 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
-   
+
       </head>
-      <body className="flex flex-col items-center">
+      <body>
        
         {/*<NavBar locale={locale} />*/ }
  
         {children}
-        <Footer />
+     
       </body>
     </html>
   );

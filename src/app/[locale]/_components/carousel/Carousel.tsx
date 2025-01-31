@@ -15,9 +15,9 @@ export default function CarouselWrapper(){
 
     return(
 
-        <div className=" flex justify-center w-2/5 h-[75vh] mt-5 mb-12" >
+        <div id="Gallery" className=" flex justify-center w-2/5 h-[75vh] mt-5 mb-12" >
 
-            <Carousel >
+            <Carousel className="py-20" >
                 <CarouselContent>
                     <CarouselItem  >
                         <Image 
@@ -46,8 +46,8 @@ export default function CarouselWrapper(){
                             />
                     </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="text-white bg-forestgreen" />
+                <CarouselNext className="text-white bg-forestgreen"  />
             </Carousel>
 
 

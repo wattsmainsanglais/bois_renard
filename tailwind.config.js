@@ -19,6 +19,7 @@ module.exports = {
     colors: {
       emerald: colors.emerald,
       'forestgreen': '#0a342f',
+      rose: colors.rose,
     },
   },
   plugins: [],

@@ -87,7 +87,7 @@ export async function sendMail(mailOptions){
                 
                 resolve ({
                     
-                    message: 'Thanks, we will get back to you soon'
+                    message: 'Merci, we will get back to you soon'
                 })
             }
             

@@ -13,9 +13,10 @@ import {
     CardTitle,
   } from "@/components/ui/card"
   import { Input } from "@/components/ui/input"
+  import { Textarea } from "@/components/ui/textarea"
 
 
-export default function ContactForm({trans}: {trans: {[key: string]: string}}  ) {
+export default function ContactForm({t}: {t: {[key: string]: string}}  ) {
 
 
 
@@ -43,26 +44,25 @@ export default function ContactForm({trans}: {trans: {[key: string]: string}}  )
 
 
     return  (
-        <div className=" w-1/2">
-        <Card className="flex flex-col items-center ">
+        <div className=" w-1/2 ">
+        <Card className="flex flex-col items-center backdrop-blur-xl ">
             <CardHeader>
-            <CardTitle>Card Title</CardTitle>
-            <CardDescription>Card Description</CardDescription>
+            <CardTitle>{t.title}</CardTitle>
+           
             </CardHeader>
             
-            <CardContent>
-                <form action={submit} ref={ref}>  
+            <CardContent className="flex justify-center w-3/5">
+                <form action={submit} ref={ref} className="flex flex-col justify-center items-center w-full">  
                     
-                    <div className="flex flex-col items-center">
-                        <Input name='name' placeholder="name"></Input>
-                        <Input name='email' placeholder="email"></Input> 
-                        <Input name='message' placeholder="message"></Input>
-                        <Input name='tel' placeholder="tel"></Input>
+                    <div className="flex flex-col items-center space-y-3 w-full">
+                        <Input name='name' placeholder={t.name}></Input>
+                        <Input name='email' placeholder={t.email}></Input> 
+                        <Input name='tel' placeholder={t.tel}></Input>
+                        <Textarea name='message' rows={5} placeholder={t.message}></Textarea>
   
                     </div>
                    
-                    {error? <p>{error}</p>:null}
-                    {message? <p>{message}</p>:null}
+                  
 
 
                     <SubmitButton>Send</SubmitButton>
@@ -71,7 +71,8 @@ export default function ContactForm({trans}: {trans: {[key: string]: string}}  )
             </CardContent>
             
             <CardFooter>
-                <p>Card Footer</p>
+                {error? <p>{error}</p>:null}
+                {message? <p>{message}</p>:null}
             </CardFooter>
         </Card>
         </div>  

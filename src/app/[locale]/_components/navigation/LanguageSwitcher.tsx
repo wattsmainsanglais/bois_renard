@@ -31,10 +31,10 @@ export default function LanguageSwitcher({locale}: {locale: string}){
                     </div>
             </DropdownMenuTrigger>
             
-            <DropdownMenuContent >
+            <DropdownMenuContent className="bg-white" >
                         
-                        <Link href={'/en'+currentRoute}><DropdownMenuItem >en</DropdownMenuItem></Link>
-                        <Link href={'/fr'+currentRoute}><DropdownMenuItem >fr</DropdownMenuItem></Link>
+                        <DropdownMenuItem className="hover:bg-forestgreen hover:text-emerald-50 " ><Link  href={'/en'+currentRoute}><p>en</p></Link></DropdownMenuItem>
+                        <DropdownMenuItem className="hover:bg-forestgreen hover:text-emerald-50"><Link  href={'/fr'+currentRoute}><p>fr</p></Link></DropdownMenuItem>
                         
                    
             </DropdownMenuContent>

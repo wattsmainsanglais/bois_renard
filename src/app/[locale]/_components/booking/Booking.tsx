@@ -18,12 +18,12 @@ export default function Booking({t, api1, api2, calendarId, calendarId2}: {t: Tr
     }
 
     return(
-        <div className="flex flex-col items-center space-y-2 bg-forestgreen opacity-85 text-white p-10">
+        <div id="Booking" className="flex flex-col items-center space-y-2 bg-forestgreen opacity-85 text-white p-10">
             <h1>{t.Title}</h1>
             <p>{t.P1}</p>
             <p>{t.P2}</p>
 
-            <div>
+            <div >
 
                 <div className="flex flex-col items-center w-full justify-center p-8 z-5 bg-white text-forestgreen rounded-md">
                     <div className="flex items-center space-x-2">

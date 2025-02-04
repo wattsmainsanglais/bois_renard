@@ -44,7 +44,7 @@ export default function ContactForm({t}: {t: {[key: string]: string}}  ) {
 
 
     return  (
-        <div className=" w-1/2 ">
+        <div id="Contact" className=" w-1/2 ">
         <Card className="flex flex-col items-center backdrop-blur-xl ">
             <CardHeader>
             <CardTitle>{t.title}</CardTitle>

@@ -17,9 +17,9 @@ export const metadata: Metadata = {
 
 export type LayoutProps = {
   children: React.ReactNode
-  params: {
+  params: Promise<{
     locale: string,
-  }
+  }>
 }
 
 

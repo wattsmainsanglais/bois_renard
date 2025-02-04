@@ -13,10 +13,10 @@ import { getTranslations } from "next-intl/server";
 import { TranslationStrings } from "./_components/booking/BookingWrapper";
 
 
+import { LayoutProps } from "./layout";
 
 
-
-export default async function Home({params}: {params: Params}) {
+export default async function Home({params}: LayoutProps) {
   
 
   const {locale}: {locale: string} = await params

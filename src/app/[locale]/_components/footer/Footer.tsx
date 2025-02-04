@@ -14,11 +14,7 @@ export default function Footer(){
                         src={GreenLogo}
                         alt='Le Gite du Bois Renard'
                     />
-                    <Image 
-                        src={LightGreen}
-                        alt='Le Gite du Bois Renard'
-                    />
-
+                   
                     
                 </div>
 

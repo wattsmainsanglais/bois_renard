@@ -65,8 +65,8 @@ export async function sendMail(mailOptions){
           // transporter 2 is for testing
     let transporter2 = nodemailer.createTransport({
         host: 'smtp.ethereal.email',
-        port: 587,
-        secure: false, // true for 465, false for other ports
+        port: 465,
+        secure: true, // true for 465, false for other ports
         auth: {
            user: 'marjory.bosco18@ethereal.email',
             pass: 'd3G4sKKTm2Jw5pJt7H'

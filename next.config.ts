@@ -6,11 +6,11 @@ const withNextIntl = createNextIntlPlugin();
 
 const cspHeader = `
     default-src 'self' http://localhost:3000 https://localhost:3000 https://bois-renard.vercel.app/;
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com http://localhost:3000 https://www.googleapis.com/calendar https://bois-renard.vercel.app/;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com http://localhost:3000 https://www.googleapis.com https://bois-renard.vercel.app/;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://bois-renard.vercel.app/;
-    connect-src data: https://maps.googleapis.com https://www.googleapis.com/calendar https://maps.gstatic.com https://www.gstatic.com http://localhost:3000 https://localhost:3000 ws://localhost:3000 https://bois-renard.vercel.app/;
+    connect-src data: https://maps.googleapis.com https://www.googleapis.com https://maps.gstatic.com https://www.gstatic.com http://localhost:3000 https://localhost:3000 ws://localhost:3000 https://bois-renard.vercel.app/;
     img-src 'self' 'unsafe-inline' blob: data: https://maps.googleapis.com  https://maps.gstatic.com;
-    font-src 'self' https://fonts.gstatic.com;
+    font-src 'self' https://fonts.gstatic.com data:application;
     worker-src blob:;
     object-src 'none';
     base-uri 'self';

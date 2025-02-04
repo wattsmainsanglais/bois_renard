@@ -33,8 +33,8 @@ export default function LanguageSwitcher({locale}: {locale: string}){
             
             <DropdownMenuContent className="bg-white" >
                         
-                        <DropdownMenuItem className="hover:bg-forestgreen hover:text-emerald-50 " ><Link  href={'/en'+currentRoute}><p>en</p></Link></DropdownMenuItem>
-                        <DropdownMenuItem className="hover:bg-forestgreen hover:text-emerald-50"><Link  href={'/fr'+currentRoute}><p>fr</p></Link></DropdownMenuItem>
+                        <Link  href={'/en'+currentRoute}><DropdownMenuItem className="hover:bg-forestgreen hover:text-emerald-50 " ><p>en</p></DropdownMenuItem></Link>
+                        <Link  href={'/fr'+currentRoute}><DropdownMenuItem className="hover:bg-forestgreen hover:text-emerald-50"><p>fr</p></DropdownMenuItem></Link>
                         
                    
             </DropdownMenuContent>

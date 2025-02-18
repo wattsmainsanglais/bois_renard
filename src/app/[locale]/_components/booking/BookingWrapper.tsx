@@ -2,6 +2,7 @@
 import { getTranslations } from "next-intl/server";
 import Booking from "./Booking";
 import { Messages } from "@/global";
+import { MessageKeys } from "next-intl";
 
 export interface TranslationStrings {
     [key: string]: string;

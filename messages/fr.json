@@ -17,6 +17,14 @@
         "Tel": "Telephone",
         "Message": "Message"
     },
+    "Gites": {
+        "FoxCottage": {
+            "Desc": "tba"
+        },
+        "CastorsLodge": {
+            "Desc": "tba"
+        }
+    },
     "Nav": {
         "Navlist": {
             "About": "A Propos",

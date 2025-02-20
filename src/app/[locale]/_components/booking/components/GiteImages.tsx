@@ -18,16 +18,18 @@ export default function GiteImages({images}: {images: Images }){
     return (
         <div className="flex">
             {images.imageSrc.map((i, index)=> (
-            <Dialog>
-                <DialogTrigger asChild>
+            <Dialog key={index}>
+                <DialogTrigger asChild >
+                    <div  className="p-2" >
                     <Image 
                         src={i}
                         alt='gite image'
                         width={128}
                         height={128}
-                        key={index}
+                        
 
                     />
+                    </div>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-md">
                     <DialogTitle aria-description="gite photo">

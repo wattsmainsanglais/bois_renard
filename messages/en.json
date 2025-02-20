@@ -1,8 +1,9 @@
 {
     "About": {
-        "Title": "About",
-        "P1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "P2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "Title": "Welcome",
+        "P1": "Situated in Nouvelle Aquitaine in southwestern France, welcome to gites de bois renard, a traditional charentaise farmhouse built in the 1840’s in the rural village of Lorigne. Our little hamlet, Bois Renard, is located between the market towns of Sauze Vaussais and Chef Boutonne, surrounded by fields and woodland, and five minutes’ drive to all your daily needs - supermarket, pharmacies, restaurants, bars and bakeries.",
+        "P2": "There are two family friendly gites, for holiday rental or longer stays, set on two hectares of land. The smaller gite has two double bedrooms and two shower rooms. The larger one has four double bedrooms and two shower rooms. The two gites can be connected for one large group booking. Subject to availability, two additional bedrooms on the ground floor with an extra bathroom can be accessed via the large gite. Each gite has a private front garden with a dining table and seating.",
+        "P3": "Outside the gites share a lovely, heated swimming pool, a games barn, summer kitchen terrasse and children’s play area. There are large open fields for children to run around and many shaded seating areas for peace and relaxation."
     },
     "Booking": {
         "Title": "Booking",

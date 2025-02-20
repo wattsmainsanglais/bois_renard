@@ -1,5 +1,5 @@
 
-
+import { TranslationValues } from 'next-intl';
 import {useTranslations} from 'next-intl';
 
 
@@ -15,6 +15,7 @@ export default function About(){
 
             <p className="text-center">{t("P1")}</p>
             <p className="text-center">{t("P2")}</p>
+            <p className="text-center">{t("P3")}</p>
         </div>
 
 

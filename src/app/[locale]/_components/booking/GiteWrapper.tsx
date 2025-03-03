@@ -1,9 +1,10 @@
 
 
 import { Messages } from "@/global"
-import { TranslationStrings } from "./BookingWrapper"
+import { TranslationStrings } from "./unusedComponents/BookingWrapper"
 import Gite from "./Gite"
 import { useTranslations } from "next-intl"
+import Booking from "./components/Booking"
 
 export interface Envs {
     [key: string]: string | undefined;
@@ -29,9 +30,11 @@ export default function GiteWrapper(){
     }
 
 
+
     return (
-        <div id="Gites" className="w-screen bg-forestgreen p-2 flex justify-center">
-           <Gite gt={gt} envs={envs}  />
+        <div id="Gites" className="w-screen bg-forestgreen p-2 flex flex-col justify-center">
+            <Booking />
+            <Gite gt={gt} envs={envs}  />
         </div>
     )
 

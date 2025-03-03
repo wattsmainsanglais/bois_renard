@@ -19,7 +19,7 @@ export default function GCalendar({bgcolor, api, calendarId, name}: {bgcolor: st
 
   return (
 
-    <div className={`w-96 bg-${bgcolor} opacity-100 `}>
+    <div className={`w-96 `}>
       
         <h2>{name}</h2>
         <FullCalendar

@@ -7,8 +7,10 @@
     },
     "Booking": {
         "Title": "Booking",
-        "P1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
-        "P2": "Please check availabilty using the calendars below"
+        "P1": "We have two gites. Both have been renovated to maintain the original features and countryside style where possible, combined with the comforts of a modern day home.",
+        "P2": "Both gite kitchens come with an electric oven, hob, microwave, fridge and freezer, dishwasher, washing machine, kettle, toaster and coffee machine. Ample cooking utensils, crockery, glasses and cutlery are provided. A full list of equipment is available on request, ahead of booking.",
+        "P3": "Both gites have a small enclosed private garden area at the front, facing west, each with a patio dining area, perfect for an aperitif or alfresco meals as the sun sets.",
+        "P4": "Bed linens, bath and pool towels, toiletries and a welcome basket are provided for each gite."
     },
     "Contact": {
         "Title": "Contact us",

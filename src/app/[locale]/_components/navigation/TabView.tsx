@@ -26,7 +26,7 @@ export default function TabView({navList}: {navList: NavList[]}){
 
   
     return (
-        <NavigationMenu  >
+        <NavigationMenu className="hidden sm:hidden md:flex lg:flex "  >
             <NavigationMenuList>
                 {navList.map((item, index) => (
                   <NavigationMenuItem key={index}> 

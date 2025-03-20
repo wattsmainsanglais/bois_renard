@@ -20,8 +20,8 @@ import { NavList } from './NavBar';
 export default function DropdownView({navList}: {navList: NavList[]}){
 
     return (
-        
-        <DropdownMenu>
+        <div className="flex sm:flex md:hidden lg:hidden ">
+        <DropdownMenu >
             <DropdownMenuTrigger>
                 <Button variant="outline">
             
@@ -36,7 +36,7 @@ export default function DropdownView({navList}: {navList: NavList[]}){
         
             </DropdownMenuContent>
         </ DropdownMenu>
-      
+      </div>
     
         
     )

@@ -10,22 +10,22 @@ import { NavList } from './NavBar';
 
 
 export default function NavItemsResponsive({navList}: {navList: NavList[]}){
-
-const [windowSize, setWindowSize] = useState(getWindowSize());
+/*
+  const [windowSize, setWindowSize] = useState(getWindowSize());
 
   function getWindowSize() {
-    const {innerWidth}: {innerWidth: number | undefined} = window;
-    if (typeof window !== 'undefined'){
-      
-      return {innerWidth};
-    } 
-    
-    
+    const { innerWidth }: { innerWidth: number | undefined } = window;
+    if (typeof window !== 'undefined') {
+
+      return { innerWidth };
     }
 
 
+  }
+
+
   useEffect(() => {
-  
+
     function handleWindowResize() {
       setWindowSize(getWindowSize());
     }
@@ -37,12 +37,13 @@ const [windowSize, setWindowSize] = useState(getWindowSize());
     };
   }, []);
 
-    
+   */ 
     
     return(
-        
-        windowSize.innerWidth > 1024 ? <TabView navList={navList} />:<DropdownView navList={navList} />
-        
+       <>
+        <TabView navList={navList} />
+        <DropdownView navList={navList} />
+      </> 
     )
 
 }

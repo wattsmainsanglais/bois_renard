@@ -18,7 +18,7 @@ export interface Images {
 }
 
 
-export default function Gite({gt, envs, route}: {gt: TranslationStrings, envs: Envs, route?: string }){
+export default function Gite({gt, envs, route}: {gt: TranslationStrings, envs: Envs, route: string }){
 
     const [giteOne, setGite] = useState(true)
 
@@ -65,7 +65,7 @@ return (
                 <GiteImages images={images} />
             </div>
             <div className="col-start-2 col-end-2 row-span-2 bg-white flex flex-col items-center align-center justify-center">
-                <GCalendar bgcolor="emerald-700" api={envs.api2} calendarId={envs.calendarId2} name='Castor Lodge' />:
+                <GCalendar bgcolor="emerald-700" api={envs.api2} calendarId={envs.calendarId2} name={route} />:
                 
             </div>
 

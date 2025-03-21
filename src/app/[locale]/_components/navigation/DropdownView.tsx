@@ -22,7 +22,7 @@ export default function DropdownView({navList}: {navList: NavList[]}){
     return (
         <div className="flex sm:flex md:hidden lg:hidden ">
         <DropdownMenu >
-            <DropdownMenuTrigger>
+            <DropdownMenuTrigger asChild>
                 <Button variant="outline">
             
                     <RxHamburgerMenu size={30} />

@@ -1,5 +1,5 @@
 
-import { useTranslations } from "next-intl"
+import { MessageKeys, NamespaceKeys, NestedKeyOf, useTranslations } from "next-intl"
 import { getTranslations } from "next-intl/server"
 import { Envs } from "../../_components/booking/GiteWrapper"
 import { TranslationStrings } from "../../_components/booking/unusedComponents/BookingWrapper"
@@ -9,12 +9,12 @@ import Gite from "../../_components/booking/Gite"
 export default async function Page({
     params,
   }: {
-    params: Promise<{ slug: string }>
+    params: Promise<{ slug: "foxcottage" | "castorslodge"  }>
   }) {
     
     const { slug } = await params
 
-    const giteTranslations = await getTranslations(`Gites.${slug}`)
+    const giteTranslations= await getTranslations(`Gites.${slug}`)
 
     const t: TranslationStrings = {
       desc: giteTranslations("Desc")
@@ -28,9 +28,24 @@ export default async function Page({
     
     }
 
+    const caseFunction = async (s: string) => {
+      if(s == 'foxcottage'){
+          let st = "Fox Cottage"
+          return st
+      }
+      if(s == 'castorslodge'){
+          let st = "Castors Lodge"
+          console.log(st)
+          return st
+      }
+
+  }
+
+  let caseTitle = await caseFunction(slug)
+
     return (
       <div id="Gites" className="w-screen bg-forestgreen opacity-95 p-2 flex flex-col justify-center">
-      <Gite gt={t} envs={envs} route={slug} />
+      <Gite gt={t} envs={envs} route={caseTitle} />
       
       </div>
     )

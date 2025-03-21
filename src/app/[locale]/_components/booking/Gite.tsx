@@ -18,7 +18,7 @@ export interface Images {
 }
 
 
-export default function Gite({gt, envs}: {gt: TranslationStrings, envs: Envs }){
+export default function Gite({gt, envs, route}: {gt: TranslationStrings, envs: Envs, route?: string }){
 
     const [giteOne, setGite] = useState(true)
 
@@ -43,7 +43,7 @@ return (
        { giteOne? 
         <div className="w-full grid grid-cols-2 grid-rows-2 h-screen bg-forestgreen opacity-85">
             <div className="col-start-1 col-end-1 row-span-1 bg-white">
-                <GiteDescription desc={gt.fDesc} title="Fox Cottage" />
+                <GiteDescription desc={gt.desc} title={route} />
                 
             </div>
             <div className="col-start-1 col-end-1 row-start-2 row-span-1 ">

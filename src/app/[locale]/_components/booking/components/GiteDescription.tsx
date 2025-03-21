@@ -4,8 +4,9 @@ import { TranslationStrings } from "../BookingWrapper";
 
 
 
-export default function GiteDescription({desc, title}: {desc: string, title: string}){
+export default function GiteDescription({desc, title}: {desc: string, title: string | undefined}){
 
+    
 
     return (
         <div className="flex flex-col justify-center items-center p-4">

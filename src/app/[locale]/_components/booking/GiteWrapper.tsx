@@ -24,8 +24,8 @@ export default function GiteWrapper(){
     const giteTranslations = useTranslations("Gites")
 
     const gt: TranslationStrings = {
-        fDesc: giteTranslations("FoxCottage.Desc"),
-        cDesc: giteTranslations("CastorsLodge.Desc")
+        fDesc: giteTranslations("foxcottage.Desc"),
+        cDesc: giteTranslations("castorslodge.Desc")
         
     }
 
@@ -34,7 +34,7 @@ export default function GiteWrapper(){
     return (
         <div id="Gites" className="w-screen bg-forestgreen p-2 flex flex-col justify-center">
             <Booking />
-            <Gite gt={gt} envs={envs}  />
+            {/*<Gite gt={gt} envs={envs}  />*/}
         </div>
     )
 

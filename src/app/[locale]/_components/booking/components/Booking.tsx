@@ -2,6 +2,7 @@
 import { getTranslations } from "next-intl/server"
 import { TranslationStrings } from "../unusedComponents/BookingWrapper"
 import { TranslationValues } from "next-intl"
+import Link from "next/link"
 
 export default async function Booking(){
 
@@ -20,8 +21,12 @@ export default async function Booking(){
                     <p>{t("P3")}</p>
                     <p>{t("P4")}</p>
                 </div>  
-
-
+                <div>
+                <Link href='gite/foxcottage'>Fox Cottage</Link>
+                <Link href='gite/castorslodge'>Castors Lodge</Link>
+                </div>
+               
+                
             </div>
 
 

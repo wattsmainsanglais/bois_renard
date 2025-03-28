@@ -12,7 +12,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 
 const carouselImages = [
-    '/gites_pics/Outside/ou1.jpg', '/gites_pics/Outside/ou2.jpg','/gites_pics/Outside/ou4.jpg','/gites_pics/Outside/ou5.jpg','/gites_pics/Outside/ou6.jpg','/gites_pics/Outside/ou7.jpg','/gites_pics/Outside/ou8.jpg','/gites_pics/Outside/ou13.jpg','/gites_pics/Outside/ou10.jpg','/gites_pics/Outside/ou12.jpg',
+    '/gites_pics/Outside/ou1.jpg', '/gites_pics/Outside/ou2.jpg','/gites_pics/Outside/ou4.jpg','/gites_pics/Outside/ou5.jpg','/gites_pics/Outside/ou6.jpg','/gites_pics/Outside/ou7.jpg','/gites_pics/Outside/ou8.jpg','/gites_pics/Outside/ou13.jpg','/gites_pics/Outside/ou12.jpg',
 ]
 
 export default function CarouselWrapper(){

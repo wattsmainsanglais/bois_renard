@@ -3,9 +3,12 @@ import { MessageKeys, NamespaceKeys, NestedKeyOf, useTranslations } from "next-i
 import { getTranslations } from "next-intl/server"
 import { Envs } from "../../_lib/types"
 import { TranslationStrings } from "../../_lib/types"
+import Link from "next/link"
+import { HomeIcon } from "@radix-ui/react-icons"
 
 import Gite from "../../_components/booking/Gite"
 import NavBar from "../../_components/navigation/NavBar"
+
 
 export default async function Page({
     params, locale
@@ -15,6 +18,7 @@ export default async function Page({
   }) {
     
     const { slug } = await params
+
 
     const giteTranslations= await getTranslations(`Gites.${slug}`)
 
@@ -48,7 +52,13 @@ export default async function Page({
     return (
 
       <div id="Gites" className="w-screen bg-forestgreen opacity-95 p-2 flex flex-col justify-center">
-      <NavBar locale={locale} route={caseTitle}/>
+        <div className="flex justify-center">
+          <Link href='/'>
+            <HomeIcon className="text-xl" color="white" />
+          </Link>
+          <NavBar locale={locale} route={caseTitle}/>
+        </div>
+        
       <Gite gt={t} envs={envs} route={caseTitle} />
       
       </div>

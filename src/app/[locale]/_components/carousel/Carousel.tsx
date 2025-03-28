@@ -11,6 +11,10 @@ import {
 import { Card, CardContent } from "@/components/ui/card"
 
 
+const carouselImages = [
+    '/gites_pics/Outside/ou1.jpg', '/gites_pics/Outside/ou2.jpg','/gites_pics/Outside/ou4.jpg','/gites_pics/Outside/ou5.jpg','/gites_pics/Outside/ou6.jpg','/gites_pics/Outside/ou7.jpg','/gites_pics/Outside/ou8.jpg','/gites_pics/Outside/ou13.jpg','/gites_pics/Outside/ou10.jpg','/gites_pics/Outside/ou12.jpg',
+]
+
 export default function CarouselWrapper(){
 
     return(
@@ -19,32 +23,18 @@ export default function CarouselWrapper(){
 
             <Carousel className="py-20" >
                 <CarouselContent>
-                    <CarouselItem  >
+                    {carouselImages.map((i, index) => (
+
+                    <CarouselItem key={index}  >
                         <Image 
-                            src="https://yavuzceliker.github.io/sample-images/image-1.jpg"
+                            src={i}
                             alt="Test"
                             width={650}
                             height={400}
                         />
                     </CarouselItem>
-                    <CarouselItem >
-                        <Image 
-                                src="https://yavuzceliker.github.io/sample-images/image-2.jpg"
-                                alt="Test"
-                                width={650}
-                                height={400}
-                               
-                            />
-                    </CarouselItem >
-                    <CarouselItem  >
-                        <Image 
-                                src="https://yavuzceliker.github.io/sample-images/image-3.jpg"
-                                alt="Test"
-                                width={650}
-                                height={400}
-                               
-                            />
-                    </CarouselItem>
+                    ))}
+                  
                 </CarouselContent>
                 <CarouselPrevious className="text-white bg-forestgreen" />
                 <CarouselNext className="text-white bg-forestgreen"  />

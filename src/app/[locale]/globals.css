@@ -8,12 +8,11 @@
     --foreground: #ededed;
     --fc-small-font-size: .85em;
     --fc-button-bg-color:#2c5037;
+    
+
   }
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 .fc-toolbar-title{
   font-size: 1em;
@@ -42,6 +41,7 @@ body {
 
 @layer base {
   :root {
+    --fc-border-color: gray;
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;

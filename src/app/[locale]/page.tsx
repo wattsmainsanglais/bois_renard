@@ -11,7 +11,7 @@ import { Params } from "next/dist/server/request/params";
 
 import { getTranslations } from "next-intl/server";
 
-import { TranslationStrings } from "./_components/booking/unusedComponents/BookingWrapper";
+import { TranslationStrings } from "./_lib/types";
 
 
 import { LayoutProps } from "./layout";

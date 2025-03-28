@@ -1,15 +1,17 @@
 
 import { MessageKeys, NamespaceKeys, NestedKeyOf, useTranslations } from "next-intl"
 import { getTranslations } from "next-intl/server"
-import { Envs } from "../../_components/booking/GiteWrapper"
-import { TranslationStrings } from "../../_components/booking/unusedComponents/BookingWrapper"
+import { Envs } from "../../_lib/types"
+import { TranslationStrings } from "../../_lib/types"
 
 import Gite from "../../_components/booking/Gite"
+import NavBar from "../../_components/navigation/NavBar"
 
 export default async function Page({
-    params,
+    params, locale
   }: {
-    params: Promise<{ slug: "foxcottage" | "castorslodge"  }>
+    params: Promise<{ slug: "foxcottage" | "castorslodge"  }>,
+    locale: string
   }) {
     
     const { slug } = await params
@@ -44,7 +46,9 @@ export default async function Page({
   let caseTitle = await caseFunction(slug)
 
     return (
+
       <div id="Gites" className="w-screen bg-forestgreen opacity-95 p-2 flex flex-col justify-center">
+      <NavBar locale={locale} route={caseTitle}/>
       <Gite gt={t} envs={envs} route={caseTitle} />
       
       </div>

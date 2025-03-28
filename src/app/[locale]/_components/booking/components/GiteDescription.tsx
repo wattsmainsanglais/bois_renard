@@ -2,8 +2,6 @@ import { Messages } from "@/global";
 import { TranslationStrings } from "../BookingWrapper";
 
 
-
-
 export default function GiteDescription({desc, title}: {desc: string, title: string}){
 
 

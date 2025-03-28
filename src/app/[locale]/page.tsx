@@ -5,12 +5,13 @@ import ContactForm from "./_components/contact/ContactForm";
 import CarouselWrapper from "./_components/carousel/Carousel";
 import About from "./_components/about/About";
 import Footer from "./_components/footer/Footer";
-import BookingWrapper from "./_components/booking/BookingWrapper";
+
+import GiteWrapper from "./_components/booking/GiteWrapper";
 import { Params } from "next/dist/server/request/params";
 
 import { getTranslations } from "next-intl/server";
 
-import { TranslationStrings } from "./_components/booking/BookingWrapper";
+import { TranslationStrings } from "./_lib/types";
 
 
 import { LayoutProps } from "./layout";
@@ -43,9 +44,11 @@ export default async function Home({params}: LayoutProps) {
           
           <CarouselWrapper />
 
-          <BookingWrapper />
+          {/*<BookingWrapper />*/}
 
           <ContactForm t={t} />
+
+          <GiteWrapper />
         
 
           </div>

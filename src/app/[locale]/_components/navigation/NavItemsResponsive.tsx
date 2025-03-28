@@ -9,40 +9,14 @@ import DropdownView from './DropdownView';
 import { NavList } from './NavBar';
 
 
-export default function NavItemsResponsive({navList}: {navList: NavList[]}){
+export default function NavItemsResponsive({navList, route}: {navList: NavList[], route?: string | undefined }){
 
-const [windowSize, setWindowSize] = useState(getWindowSize());
-
-  function getWindowSize() {
-    const {innerWidth}: {innerWidth: number | undefined} = window;
-    if (typeof window !== 'undefined'){
-      
-      return {innerWidth};
-    } 
-    
-    
-    }
-
-
-  useEffect(() => {
-  
-    function handleWindowResize() {
-      setWindowSize(getWindowSize());
-    }
-
-    window.addEventListener('resize', handleWindowResize);
-
-    return () => {
-      window.removeEventListener('resize', handleWindowResize);
-    };
-  }, []);
-
-    
     
     return(
-        
-        windowSize.innerWidth > 1024 ? <TabView navList={navList} />:<DropdownView navList={navList} />
-        
+       <>
+        <TabView navList={navList} route={route} />
+        <DropdownView navList={navList} route={route} />
+      </> 
     )
 
 }

@@ -6,7 +6,8 @@ import { Calendar } from '@fullcalendar/core';
 import bootstrap5Plugin from '@fullcalendar/bootstrap5';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
-
+//import 'bootstrap/dist/css/bootstrap.css';
+//import 'bootstrap-icons/font/bootstrap-icons.css'
 
 
 export default function GCalendar({bgcolor, api, calendarId, name}: {bgcolor: string, api: string|undefined , calendarId: string | undefined, name: string}) {
@@ -19,16 +20,17 @@ export default function GCalendar({bgcolor, api, calendarId, name}: {bgcolor: st
 
   return (
 
-    <div className={`w-96 bg-${bgcolor} opacity-100`}>
+    <div className={`w-96 `}>
       
         <h2>{name}</h2>
         <FullCalendar
-          plugins={[ dayGridPlugin, googleCalendarPlugin, bootstrap5Plugin ]}
+          plugins={[ dayGridPlugin, googleCalendarPlugin]}
           initialView="dayGridMonth"
           eventColor={bgcolor}
           contentHeight={350}
           aspectRatio={2}
-          themeSystem='bootstrap5'
+          themeSystem='default'
+          buttonIcons={false}
           googleCalendarApiKey={api}
           eventSources={[{ googleCalendarId: calendarId }]}
           

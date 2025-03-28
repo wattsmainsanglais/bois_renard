@@ -1,13 +1,18 @@
 {
     "About": {
-        "Title": "About",
-        "P1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "P2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "Title": "Welcome",
+        "P1": "Situated in Nouvelle Aquitaine in southwestern France, welcome to gites de bois renard, a traditional charentaise farmhouse built in the 1840’s in the rural village of Lorigne. Our little hamlet, Bois Renard, is located between the market towns of Sauze Vaussais and Chef Boutonne, surrounded by fields and woodland, and five minutes’ drive to all your daily needs - supermarket, pharmacies, restaurants, bars and bakeries.",
+        "P2": "There are two family friendly gites, for holiday rental or longer stays, set on two hectares of land. The smaller gite has two double bedrooms and two shower rooms. The larger one has four double bedrooms and two shower rooms. The two gites can be connected for one large group booking. Subject to availability, two additional bedrooms on the ground floor with an extra bathroom can be accessed via the large gite. Each gite has a private front garden with a dining table and seating.",
+        "P3": "Outside the gites share a lovely, heated swimming pool, a games barn, summer kitchen terrasse and children’s play area. There are large open fields for children to run around and many shaded seating areas for peace and relaxation."
     },
     "Booking": {
         "Title": "Booking",
-        "P1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
-        "P2": "Please check availabilty using the calendars below"
+        "P1": "We have two gites. Both have been renovated to maintain the original features and countryside style where possible, combined with the comforts of a modern day home.",
+        "P2": "Both gite kitchens come with an electric oven, hob, microwave, fridge and freezer, dishwasher, washing machine, kettle, toaster and coffee machine. Ample cooking utensils, crockery, glasses and cutlery are provided. A full list of equipment is available on request, ahead of booking.",
+        "P3": "Both gites have a small enclosed private garden area at the front, facing west, each with a patio dining area, perfect for an aperitif or alfresco meals as the sun sets.",
+        "P4": "Bed linens, bath and pool towels, toiletries and a welcome basket are provided for each gite.",
+        "P5": "Use the links to see more information about each gite and availability. To book, please use the contact form above",
+        "Link_Para": "Explore our Gites here!"
     },
     "Contact": {
         "Title": "Contact us",
@@ -15,6 +20,14 @@
         "Email": "Email",
         "Tel": "Telephone",
         "Message": "Message"
+    },
+    "Gites": {
+        "foxcottage": {
+            "Desc": "Fox cottage is the smaller gite which can be entered from either the front garden into the cosy living room with original flagstone floor and a log burner, or the back door leading past the ground floor shower room into a fully equipped kitchen with dining table. Upstairs there is a double bedroom with 160x200 bed, and half a level up another double bedroom with 160x200 bed and the second shower room. There is also a little mezzanine above the first bedroom for an additional single bed/children’s play area."
+        },
+        "castorslodge": {
+            "Desc": "Castors Lodge is our large gite with an entrance hall on the ground floor leading to a spacious living dining room with wooden floors, TV and large log fire. This opens to the fully equipped kitchen with pantry/laundry room and downstairs toilet. The entrance hall and kitchen both have front and back doors leading to a private garden at the front and shared outside areas at the back. Upstairs there are four bedrooms and two shower rooms. A double bedroom with 180x200 bed a twin bedroom 90x200 beds and a shared shower room are on each wing of the landing."
+        }
     },
     "Nav": {
         "Navlist": {

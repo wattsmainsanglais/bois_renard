@@ -7,7 +7,7 @@ export default function Footer(){
 
 
     return (
-        <div className="flex justify-center border-2 border-solid">
+        <div className="flex justify-center border-t-2 border-solid">
             <div className=" align-center w-1/4  ">
                 <div>
                     <Image 

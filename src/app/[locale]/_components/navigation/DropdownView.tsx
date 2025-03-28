@@ -14,15 +14,15 @@ import {
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
 
-import { NavList } from './NavBar';
+import { NavList } from '../../_lib/types';
 
 
-export default function DropdownView({navList}: {navList: NavList[]}){
+export default function DropdownView({navList, route}: {navList: NavList[] , route?: string|undefined}){
 
     return (
-        
-        <DropdownMenu>
-            <DropdownMenuTrigger>
+        <div className="flex sm:flex md:hidden lg:hidden ">
+        <DropdownMenu >
+            <DropdownMenuTrigger asChild>
                 <Button variant="outline">
             
                     <RxHamburgerMenu size={30} />
@@ -31,12 +31,12 @@ export default function DropdownView({navList}: {navList: NavList[]}){
             <DropdownMenuContent>
 
                 {navList.map((i, index) => (
-                    <DropdownMenuItem key={index}><Link href={`#${i.id}`}><p className="text-lg">{i.title}</p></Link></DropdownMenuItem>
+                    <DropdownMenuItem key={index}><Link href={route ?`/#${i.id}` : `#${i.id}`}><p className="text-lg">{i.title}</p></Link></DropdownMenuItem>
                 ))}
         
             </DropdownMenuContent>
         </ DropdownMenu>
-      
+      </div>
     
         
     )

@@ -7,14 +7,9 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 import NavItemsResponsive from './NavItemsResponsive';
 
+import { NavList } from '../../_lib/types';
 
-export interface NavList  {
-        title: string,
-        id: string
-       } 
-    
-
-export default async function NavBar({locale}: {locale: string}){
+export default async function NavBar({locale, route}: {locale: string, route?: string|undefined}){
 
     const t = await getTranslations("Nav.Navlist")
     
@@ -24,10 +19,10 @@ export default async function NavBar({locale}: {locale: string}){
    
     <div className="flex justify-center w-[99vw]">
        
-        <div className="flex sm:justify-end md:justify-end lg:justify-center " >
-           <NavItemsResponsive navList={navList}  />
+        <div className="flex sm:justify-end md:justify-end lg:justify-center  " >
+           <NavItemsResponsive navList={navList} route={route} />
         </div>
-        <div className="flex w-[10vw] justify-end m-1 ">
+        <div className="flex w-[10vw] justify-end m-1">
           <LanguageSwitcher locale={locale} />
 
         </div>

@@ -20,7 +20,7 @@ import { NavList } from '../../_lib/types';
 export default function DropdownView({navList, route}: {navList: NavList[] , route?: string|undefined}){
 
     return (
-        <div className="flex sm:flex md:hidden lg:hidden ">
+        <div className="flex sm:flex md:hidden lg:hidden text-white ">
         <DropdownMenu >
             <DropdownMenuTrigger asChild>
                 <Button variant="outline">
@@ -28,10 +28,10 @@ export default function DropdownView({navList, route}: {navList: NavList[] , rou
                     <RxHamburgerMenu size={30} />
                 </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent>
+            <DropdownMenuContent className='bg-forestgreen/90'>
 
                 {navList.map((i, index) => (
-                    <DropdownMenuItem key={index}><Link href={route ?`/#${i.id}` : `#${i.id}`}><p className="text-lg">{i.title}</p></Link></DropdownMenuItem>
+                    <DropdownMenuItem key={index}><Link href={route ?`/#${i.id}` : `#${i.id}`}><p className="text-lg text-white">{i.title}</p></Link></DropdownMenuItem>
                 ))}
         
             </DropdownMenuContent>

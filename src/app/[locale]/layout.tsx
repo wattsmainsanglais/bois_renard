@@ -33,7 +33,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
-
+        
       </head>
       <body>
        

@@ -9,21 +9,21 @@ export default async function Booking(){
   const t = await getTranslations("Booking")
 
     return(
-        <div id="Booking" className="flex flex-col items-center space-y-2 bg-forestgreen opacity-85 text-white p-10">
+        <div id="Booking" className="flex flex-col items-center space-y-2 bg-forestgreen opacity-85 text-white p-3 md:p-8 lg:p-10">
             <h1 className="font-bold text-xl">{t("Title")}</h1>
            
 
             <div >
 
-                <div className="flex  w-full p-8 z-5 bg-white text-forestgreen rounded-md">
-                    <div className="flex flex-col gap-2 w-1/2">   
+                <div className="flex flex-col md:flex-row lg:flex-row w-full p-8 z-5 bg-white text-forestgreen rounded-md">
+                    <div className="flex flex-col gap-2 w-1/1 md:w-1/2">   
                         <p>{t("P1")}</p>
                         <p>{t("P2")}</p>
                         <p>{t("P3")}</p>
                         <p>{t("P4")}</p>
                         <p>{t("P5")}</p>
                     </div> 
-                    <div  className="flex flex-col w-1/2 justify-start items-center" >
+                    <div  className="flex flex-col w-1/1 md:w-1/2 justify-center md:justify-center items-center md:items-center" >
                         <h1 className="pb-10 font-bold text-lg">{t("Link_Para")}</h1>
                         <div className="flex gap-5 font-bold">
                             <div >

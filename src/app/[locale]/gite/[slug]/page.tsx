@@ -4,20 +4,21 @@ import { getTranslations } from "next-intl/server"
 import { Envs } from "../../_lib/types"
 import { TranslationStrings } from "../../_lib/types"
 import Link from "next/link"
-import { HomeIcon } from "@radix-ui/react-icons"
+import { RxHome } from "react-icons/rx"
 
 import Gite from "../../_components/booking/Gite"
 import NavBar from "../../_components/navigation/NavBar"
 
 
 export default async function Page({
-    params, locale
+    params
   }: {
-    params: Promise<{ slug: "foxcottage" | "castorslodge"  }>,
-    locale: string
+    params: Promise<{ slug: "foxcottage" | "castorslodge" , locale: string  }>,
+    
   }) {
     
     const { slug } = await params
+    const {locale} = await params
 
 
     const giteTranslations= await getTranslations(`Gites.${slug}`)
@@ -50,17 +51,18 @@ export default async function Page({
   let caseTitle = await caseFunction(slug)
 
     return (
-
-      <div id="Gites" className="w-screen bg-forestgreen opacity-95 p-2 flex flex-col justify-center">
-        <div className="flex justify-center">
+      <div className=" w-[100vw] h-auto space-y-10 bg-fixed bg-center bg-cover font-sans" style={{backgroundImage: "url(/logo-artwork/off-white/GDBR_logo-20.png)" }}>
+      <div id="Gites" className="w-screen bg-forestgreen opacity-85 p-2 flex flex-col justify-center">
+        <div className="flex justify-center items-center">
           <Link href='/'>
-            <HomeIcon className="text-xl" color="white" />
+            <RxHome size={32} className="text-xl" color="white" />
           </Link>
           <NavBar locale={locale} route={caseTitle}/>
         </div>
         
       <Gite gt={t} envs={envs} route={caseTitle} />
       
+      </div>
       </div>
     )
 

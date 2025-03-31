@@ -28,6 +28,20 @@ export default function TabView({navList, route}: {navList: NavList[], route?: s
     return (
         <NavigationMenu className="hidden sm:hidden md:flex lg:flex "  >
             <NavigationMenuList>
+                <NavigationMenuItem> 
+                    <NavigationMenuTrigger className="inline-flex h-9 w-max items-center justify-center bg-none px-4 py-2 text-xl text-white font-medium active:border-none transition-all " >Gites</NavigationMenuTrigger>
+                    <NavigationMenuContent className="shadow-lg shadow-slate-100 border-none bg-forestgreen/70 ">
+
+                        <Link href='/gite/foxcottage' legacyBehavior passHref>
+                            <NavigationMenuLink className="inline-flex h-9 w-max items-center justify-center bg-none px-4 py-2 text-sm text-white font-medium hover:text-sm hover:text-slate-300 active:border-none transition-all " ><p className="text-xl active:text-emerald-800 active:text-xl transition-all">Fox Cottage</p></NavigationMenuLink>
+                        </Link>
+                        <Link href='/gite/castorslodge' legacyBehavior passHref>
+                            <NavigationMenuLink className="inline-flex h-9 w-max items-center justify-center bg-none px-4 py-2 text-sm text-white font-medium hover:text-sm hover:text-slate-300 active:border-none transition-all " ><p className="text-xl active:text-emerald-800 active:text-xl transition-all">Castors Lodge</p></NavigationMenuLink>
+                        </Link>
+
+                    </NavigationMenuContent>
+                    
+                </NavigationMenuItem>  
                 {navList.map((item, index) => (
                   <NavigationMenuItem key={index}> 
                     <Link href={route ? `/#${item.id}` : `#${item.id}`} legacyBehavior passHref>
@@ -35,6 +49,8 @@ export default function TabView({navList, route}: {navList: NavList[], route?: s
                     </Link>
                   </NavigationMenuItem> 
                 ))}
+                
+
             </NavigationMenuList>
         </NavigationMenu>
     )

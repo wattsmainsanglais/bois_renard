@@ -6,7 +6,7 @@ import TabView from './TabView';
 import DropdownView from './DropdownView';
 
 
-import { NavList } from './NavBar';
+import { NavList } from '../../_lib/types';
 
 
 export default function NavItemsResponsive({navList, route}: {navList: NavList[], route?: string | undefined }){

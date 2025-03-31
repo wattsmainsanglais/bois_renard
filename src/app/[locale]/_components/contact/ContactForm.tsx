@@ -45,20 +45,20 @@ export default function ContactForm({t}: {t: {[key: string]: string}}  ) {
 
     return  (
         <div id="Contact" className=" w-1/2 ">
-        <Card className="flex flex-col items-center backdrop-blur-xl shadow-forestgreen ">
+        <Card className="flex flex-col items-center backdrop-blur-xl ">
             <CardHeader>
-            <CardTitle>{t.title}</CardTitle>
+            <CardTitle className="text-xl color-forestgreen">{t.title}</CardTitle>
            
             </CardHeader>
             
             <CardContent className="flex justify-center w-3/5">
                 <form action={submit} ref={ref} className="flex flex-col justify-center items-center w-full">  
                     
-                    <div className="flex flex-col items-center space-y-3 w-full">
-                        <Input className="shadow-forestgreen-1000" name='name' placeholder={t.name}></Input>
-                        <Input name='email' placeholder={t.email}></Input> 
-                        <Input name='tel' placeholder={t.tel}></Input>
-                        <Textarea name='message' rows={5} placeholder={t.message}></Textarea>
+                    <div className="flex flex-col items-center space-y-3 w-full mb-2">
+                        <Input name='name' placeholder={t.name} required></Input>
+                        <Input name='email' placeholder={t.email} required></Input> 
+                        <Input name='tel' placeholder={t.tel} required></Input>
+                        <Textarea name='message' rows={5} placeholder={t.message} required></Textarea>
   
                     </div>
                    

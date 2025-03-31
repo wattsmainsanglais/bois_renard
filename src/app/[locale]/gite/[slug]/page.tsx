@@ -51,7 +51,7 @@ export default async function Page({
   let caseTitle = await caseFunction(slug)
 
     return (
-      <div className=" w-[100vw] h-auto space-y-10 bg-fixed bg-center bg-cover font-sans" style={{backgroundImage: "url(/logo-artwork/off-white/GDBR_logo-20.png)" }}>
+      <div className=" w-screen h-auto space-y-10 bg-fixed bg-center bg-cover font-sans " style={{backgroundImage: "url(/logo-artwork/off-white/GDBR_logo-20.png)" }}>
       <div id="Gites" className="w-screen bg-forestgreen opacity-85 p-2 flex flex-col justify-center">
         <div className="flex justify-center items-center">
           <Link href='/'>

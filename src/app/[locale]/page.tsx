@@ -46,10 +46,9 @@ export default async function Home({params}: LayoutProps) {
 
           {/*<BookingWrapper />*/}
 
-          <ContactForm t={t} />
-
           <GiteWrapper />
-        
+          
+          <ContactForm t={t} />
 
           </div>
       </div>

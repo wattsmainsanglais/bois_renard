@@ -13,6 +13,7 @@ import {
     DropdownMenuItem,
     DropdownMenuLabel,
     DropdownMenuSeparator,
+    DropdownMenuSubTrigger,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
 
@@ -25,10 +26,10 @@ export default function LanguageSwitcher({locale}: {locale: string}){
     return (
         <>
         <DropdownMenu >
-            <DropdownMenuTrigger asChild>
-                    <div className="flex justify-between items-center text-white w-[3vw]">
+            <DropdownMenuTrigger className="flex items-center ring-none border-none shadow-none text-white">
+                    
                     {locale}<RxChevronDown className="text-white"/>
-                    </div>
+                    
             </DropdownMenuTrigger>
             
             <DropdownMenuContent className="bg-white" >

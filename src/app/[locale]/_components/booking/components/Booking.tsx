@@ -10,7 +10,7 @@ export default async function Booking(){
 
     return(
         <div id="Booking" className="flex flex-col items-center space-y-2 bg-forestgreen opacity-85 text-white p-10">
-            <h1 className="font-bold text-lg">{t("Title")}</h1>
+            <h1 className="font-bold text-xl">{t("Title")}</h1>
            
 
             <div >

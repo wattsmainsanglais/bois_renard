@@ -72,7 +72,7 @@ export default function ContactForm({t}: {t: {[key: string]: string}}  ) {
             </CardContent>
             
             <CardFooter>
-                <div className="flex w-1/1 gap-4">
+                <div className="flex flex-col md:flex-row w-1/1 gap-4">
                     <div className="flex gap-1">
                         <PhoneCallIcon />
                         <p>+33 6 1238 4838</p>

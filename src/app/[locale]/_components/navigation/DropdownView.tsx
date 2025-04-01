@@ -12,6 +12,8 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
+    DropdownMenuSub,
+    DropdownMenuSubTrigger
   } from "@/components/ui/dropdown-menu"
 
 import { NavList } from '../../_lib/types';
@@ -33,7 +35,23 @@ export default function DropdownView({navList, route}: {navList: NavList[] , rou
                 {navList.map((i, index) => (
                     <DropdownMenuItem key={index}><Link href={route ?`/#${i.id}` : `#${i.id}`}><p className="text-lg text-white">{i.title}</p></Link></DropdownMenuItem>
                 ))}
-        
+                    <DropdownMenuSub>
+                        <DropdownMenuSubTrigger className="text-lg text-white">Gites</DropdownMenuSubTrigger>
+                        <DropdownMenuContent className='bg-slate-500/90'>
+                            <DropdownMenuItem>
+                                <Link href='/gite/foxcottage' legacyBehavior passHref>
+                                    <p className="text-lg text-white active:text-emerald-800 active:text-xl transition-all">Fox Cottage</p>
+                                </Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                                <Link href='/gite/castorslodge' legacyBehavior passHref>
+                                    <p className="text-lg text-white active:text-emerald-800 active:text-xl transition-all">Castors Lodge</p>
+                                </Link>
+                            </DropdownMenuItem>
+                        </DropdownMenuContent>
+                    </DropdownMenuSub>
+                    
+                    
             </DropdownMenuContent>
         </ DropdownMenu>
       </div>

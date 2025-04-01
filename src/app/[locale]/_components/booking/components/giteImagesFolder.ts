@@ -1,3 +1,4 @@
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import ca1 from '/gite_pics/Large.ca1.jpg'
 
 import fo1 from '/gites_pics/Small/fo1.jpg'

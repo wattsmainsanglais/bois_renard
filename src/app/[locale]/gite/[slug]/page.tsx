@@ -51,16 +51,16 @@ export default async function Page({
   let caseTitle = await caseFunction(slug)
 
     return (
-      <div className=" w-screen h-auto space-y-10 bg-fixed bg-center bg-cover font-sans " style={{backgroundImage: "url(/logo-artwork/off-white/GDBR_logo-20.png)" }}>
-      <div id="Gites" className="w-screen bg-forestgreen opacity-85 p-2 flex flex-col justify-center">
-        <div className="flex justify-center items-center">
-          <Link href='/'>
+      <div className=" w-[99vw] h-auto space-y-10 bg-[url(/logo-artwork/off-white/GDBR_logo-20.png)] bg-fixed bg-center bg-cover font-sans ">
+      <div id="Gites" className="w-1/1 bg-forestgreen opacity-85 p-1 flex flex-col justify-center align-center">
+        <div className="flex justify-center items-center align-center pt-1">
+          <Link href='/' className="pr-2">
             <RxHome size={32} className="text-xl" color="white" />
           </Link>
           <NavBar locale={locale} route={caseTitle}/>
         </div>
         
-      <Gite gt={t} envs={envs} route={caseTitle} />
+        <Gite gt={t} envs={envs} route={caseTitle} />
       
       </div>
       </div>

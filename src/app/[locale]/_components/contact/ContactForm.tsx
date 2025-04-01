@@ -14,6 +14,7 @@ import {
   } from "@/components/ui/card"
   import { Input } from "@/components/ui/input"
   import { Textarea } from "@/components/ui/textarea"
+import { MailIcon, PhoneCallIcon } from "lucide-react"
 
 
 export default function ContactForm({t}: {t: {[key: string]: string}}  ) {
@@ -71,7 +72,17 @@ export default function ContactForm({t}: {t: {[key: string]: string}}  ) {
             </CardContent>
             
             <CardFooter>
-                {error? <p>{error}</p>:null}
+                <div className="flex w-1/1 gap-4">
+                    <div className="flex gap-1">
+                        <PhoneCallIcon />
+                        <p>+33 6 1238 4838</p>
+                    </div>
+                    <div className="flex gap-1">
+                        <MailIcon />
+                        <p>welcome@giteduboisrenard.fr</p>
+                    </div>
+                </div>
+                {error? <p className="text-red">{error}</p>:null}
                 {message? <p>{message}</p>:null}
             </CardFooter>
         </Card>

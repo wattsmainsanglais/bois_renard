@@ -12,6 +12,6 @@ export interface Images {
 
 export const images: Images = {
 
-    imagesCastor: ['/gites_pics/Large/ca1.jpg', '/gites_pics/Large/ca2.jpg', '/gites_pics/Large/ca3.jpg', '/gites_pics/Large/ca4.jpg', '/gites_pics/Large/ca5.jpg', '/gites_pics/Large/ca6.jpg', '/gites_pics/Large/ca7.jpg', '/gites_pics/Large/ca8.jpg', '/gites_pics/Large/ca9.jpg'],
+    imagesCastor: ['/gites_pics/Large/ca1.jpg', '/gites_pics/Large/ca2.jpg', '/gites_pics/Large/ca3.jpg', '/gites_pics/Large/ca4.jpg', '/gites_pics/Large/ca5.jpg', '/gites_pics/Large/ca6.jpg', '/gites_pics/Large/ca7.jpg', '/gites_pics/Large/ca8.jpg'],
     imagesFox: ['/gites_pics/Small/fo1.jpg']
 }

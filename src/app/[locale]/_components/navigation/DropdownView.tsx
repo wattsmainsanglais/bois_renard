@@ -20,13 +20,13 @@ import { NavList } from '../../_lib/types';
 export default function DropdownView({navList, route}: {navList: NavList[] , route?: string|undefined}){
 
     return (
-        <div className="flex sm:flex md:hidden lg:hidden text-white ">
+        <div className="flex sm:flex md:hidden lg:hidden text-white pl-2 pr-2 ">
         <DropdownMenu >
             <DropdownMenuTrigger asChild>
-                <Button variant="outline">
+              
             
                     <RxHamburgerMenu size={30} />
-                </Button>
+              
             </DropdownMenuTrigger>
             <DropdownMenuContent className='bg-forestgreen/90'>
 

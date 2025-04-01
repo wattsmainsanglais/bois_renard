@@ -38,7 +38,7 @@ export default async function Home({params}: LayoutProps) {
     <div className="flex w-[100vw]  flex-col items-center " >
       
       <Splash locale={locale} />
-      <div className=" w-[100vw] space-y-10 bg-fixed bg-center bg-cover font-sans mb-10" style={{backgroundImage: "url(/logo-artwork/off-white/GDBR_logo-20.png)" }}>
+      <div className=" w-[100vw] space-y-10 bg-[url(/logo-artwork/off-white/GDBR_logo-20.png)] bg-fixed bg-center bg-cover font-sans mb-10">
           <About />
           <div className="flex w-full flex-col justify-center  items-center space-y-10 ">
           

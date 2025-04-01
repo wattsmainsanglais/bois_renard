@@ -19,7 +19,7 @@ export default async function NavBar({locale, route}: {locale: string, route?: s
    
     <div className="flex justify-start md:justify-center w-[99vw]">
        
-        <div className="flex justify-start md:justify-end lg:justify-center  " >
+        <div className="flex w-4/5 justify-start align-center items-center md:justify-end lg:justify-center  " >
            <NavItemsResponsive navList={navList} route={route} />
         </div>
         <div className="flex w-[10vw] justify-end m-1">

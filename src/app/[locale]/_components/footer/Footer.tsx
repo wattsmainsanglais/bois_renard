@@ -7,17 +7,18 @@ export default function Footer(){
 
 
     return (
-        <div className="flex justify-center border-t-2 border-solid">
+        <div className="flex flex-col items-center justify-center border-t-2 border-solid">
             <div className=" align-center w-1/4  ">
                 <div>
                     <Image 
                         src={GreenLogo}
                         alt='Le Gite du Bois Renard'
-                    />
-                   
-                    
+                    /> 
                 </div>
 
+            </div>
+            <div>
+                <h2 className="font-bold text-forestgreen">Siret - 94182277700012 </h2>
             </div>
         </div>
     )

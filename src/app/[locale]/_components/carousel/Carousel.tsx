@@ -8,6 +8,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
+import { ImageList, ImageListItem } from '@mui/material';
+
 import { Card, CardContent } from "@/components/ui/card"
 
 
@@ -19,7 +21,20 @@ export default function CarouselWrapper(){
 
     return(
 
-        <div id="Gallery" className=" flex justify-center w-2/5 h-[75vh] mt-5 mb-12" >
+        <ImageList sx={{ width: 1000, height: 450 }} variant="woven" cols={5} gap={8}>
+            {carouselImages.map((item, index) => (
+            <ImageListItem key={index}>
+                <img
+                    srcSet={`${item}?w=161&fit=crop&auto=format&dpr=2 2x`}
+                    src={`${item}?w=161&fit=crop&auto=format`}
+                    alt='alt'
+                    loading="lazy"
+                />
+            </ImageListItem>
+            ))}
+            </ImageList>
+
+    /*    <div id="Gallery" className=" flex justify-center w-2/5 h-[75vh] mt-5 mb-12" >
 
             <Carousel className="py-20" >
                 <CarouselContent>
@@ -41,6 +56,6 @@ export default function CarouselWrapper(){
             </Carousel>
 
 
-        </div>
+        </div>*/
     )
 }

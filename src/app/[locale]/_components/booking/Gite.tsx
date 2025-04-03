@@ -25,7 +25,7 @@ return (
                 
             </div>
             <div className="flex flex-wrap w-1/1 pt-3 pb-3 md:p-0 md:col-start-1 md:col-end-1 md:row-start-2 md:row-span-1 ">
-                <GiteImages images={route === 'Fox Cottage' ? images.imagesFox: images.imagesCastor} route={route ? route : 'Untitled'} />
+                <GiteImages images={route === 'Fox Cottage' ? images.imagesFox: images.imagesCastor} route={route ? route : 'Untitled'} width={128} />
             </div>
             <div className="md:col-start-2 md:col-end-2 md:row-span-2 bg-slate-300 flex flex-col items-center align-center justify-center rounded-md md:ml-1">
                 <GCalendar bgcolor="emerald-700" api={envs.api2} calendarId={envs.calendarId2} name={route ? route : 'Untitled'} />:

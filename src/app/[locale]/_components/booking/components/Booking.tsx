@@ -16,14 +16,14 @@ export default async function Booking(){
             <div >
 
                 <div className="flex flex-col md:flex-row lg:flex-row w-full p-8 z-5 bg-white text-forestgreen rounded-md">
-                    <div className="flex flex-col gap-2 w-1/1 md:w-1/2">   
+                    <div className="flex flex-col gap-2 w-1/1 lg:w-3/5">   
                         <p>{t("P1")}</p>
                         <p>{t("P2")}</p>
                         <p>{t("P3")}</p>
                         <p>{t("P4")}</p>
                         <p>{t("P5")}</p>
                     </div> 
-                    <div  className="flex flex-col w-1/1 md:w-1/2 justify-center md:justify-center items-center md:items-center" >
+                    <div  className="flex flex-col w-1/1 lg:w-2/5 justify-center md:justify-center items-center md:items-center" >
                         <h1 className="pb-10 font-bold text-lg">{t("Link_Para")}</h1>
                         <div className="flex gap-5 font-bold">
                             <div >

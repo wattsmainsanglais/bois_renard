@@ -13,6 +13,9 @@ module.exports = {
     ],
   
   theme: {
+    screens: {
+      'lg': '1025px'
+    },
     extend: {
 
     },
@@ -21,7 +24,8 @@ module.exports = {
       'forestgreen': '#0a342f',
       rose: colors.rose,
       white: colors.white,
-      slate: colors.slate
+      slate: colors.slate,
+      'orange' : '#da5b41'
       
     },
   },

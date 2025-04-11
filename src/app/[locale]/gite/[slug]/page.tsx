@@ -30,7 +30,8 @@ export default async function Page({
       season: giteTranslations("Season"),
       sprice: giteTranslations("SeasonPrice"),
       off: giteTranslations("OffSeason"),
-      oprice: giteTranslations("OffSeasonPrice")
+      oprice: giteTranslations("OffSeasonPrice"),
+      add: giteTranslations("Additional")
     }
 
      const envs: Envs = {

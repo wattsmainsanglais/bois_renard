@@ -23,10 +23,26 @@
     },
     "Gites": {
         "foxcottage": {
-            "Desc": "tba"
+            "Desc": "tba",
+            "Tarif": "Tarifs",
+            "Sleep": "Sleeps 4/5",
+            "Season": "Mid-June to Mid-September – minimum stay of one week",
+            "SeasonPrice": "1050 euros per week, each additional night 150 euros.",
+            "OffSeason": "October to May – minimum stay of four days",
+            "OffSeasonPrice": "800 euros per week or 115 euros per night",
+            "Additional": "If you are interested in renting and connecting both gites for a large group there will be a discount depending on the number of people and length of stay. Contact us for further details."
+
         },
         "castorslodge": {
-            "Desc": "tba"
+            "Desc": "tba",
+            "Tarif": "Tarifs",
+            "Sleep": "Sleeps 8",
+            "Season": "Mid-June to Mid-September – minimum stay of one week",
+            "SeasonPrice": "2100 euros per week, each additional night 300 euros.",
+            "OffSeason": "October to May – minimum stay of four days",
+            "OffSeasonPrice": "1500 euros per week or 215 euros per night",
+            "Additional": "If you are interested in renting and connecting both gites for a large group there will be a discount depending on the number of people and length of stay. Contact us for further details."
+        
         }
     },
     "Nav": {

@@ -24,7 +24,13 @@ export default async function Page({
     const giteTranslations= await getTranslations(`Gites.${slug}`)
 
     const t: TranslationStrings = {
-      desc: giteTranslations("Desc")
+      desc: giteTranslations("Desc"),
+      tarif: giteTranslations("Tarif"),
+      sleep: giteTranslations("Sleep"),
+      season: giteTranslations("Season"),
+      sprice: giteTranslations("SeasonPrice"),
+      off: giteTranslations("OffSeason"),
+      oprice: giteTranslations("OffSeasonPrice")
     }
 
      const envs: Envs = {

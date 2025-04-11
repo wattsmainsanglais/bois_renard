@@ -23,10 +23,26 @@
     },
     "Gites": {
         "foxcottage": {
-            "Desc": "Fox cottage is the smaller gite which can be entered from either the front garden into the cosy living room with original flagstone floor and a log burner, or the back door leading past the ground floor shower room into a fully equipped kitchen with dining table. Upstairs there is a double bedroom with 160x200 bed, and half a level up another double bedroom with 160x200 bed and the second shower room. There is also a little mezzanine above the first bedroom for an additional single bed/children’s play area."
+            "Desc": "Fox cottage is the smaller gite which can be entered from either the front garden into the cosy living room with original flagstone floor and a log burner, or the back door leading past the ground floor shower room into a fully equipped kitchen with dining table. Upstairs there is a double bedroom with 160x200 bed, and half a level up another double bedroom with 160x200 bed and the second shower room. There is also a little mezzanine above the first bedroom for an additional single bed/children’s play area.",
+            "Tarif": "Tarifs",
+            "Sleep": "Sleeps 4/5",
+            "Season": "Mid-June to Mid-September – minimum stay of one week",
+            "SeasonPrice": "1050 euros per week, each additional night 150 euros.",
+            "OffSeason": "October to May – minimum stay of four days",
+            "OffSeasonPrice": "800 euros per week or 115 euros per night",
+            "Additional": "If you are interested in renting and connecting both gites for a large group there will be a discount depending on the number of people and length of stay. Contact us for further details."
+
         },
         "castorslodge": {
-            "Desc": "Castors Lodge is our large gite with an entrance hall on the ground floor leading to a spacious living dining room with wooden floors, TV and large log fire. This opens to the fully equipped kitchen with pantry/laundry room and downstairs toilet. The entrance hall and kitchen both have front and back doors leading to a private garden at the front and shared outside areas at the back. Upstairs there are four bedrooms and two shower rooms. A double bedroom with 180x200 bed a twin bedroom 90x200 beds and a shared shower room are on each wing of the landing."
+            "Desc": "Castors Lodge is our large gite with an entrance hall on the ground floor leading to a spacious living dining room with wooden floors, TV and large log fire. This opens to the fully equipped kitchen with pantry/laundry room and downstairs toilet. The entrance hall and kitchen both have front and back doors leading to a private garden at the front and shared outside areas at the back. Upstairs there are four bedrooms and two shower rooms. A double bedroom with 180x200 bed a twin bedroom 90x200 beds and a shared shower room are on each wing of the landing.",
+            "Tarif": "Tarifs",
+            "Sleep": "Sleeps 8",
+            "Season": "Mid-June to Mid-September – minimum stay of one week",
+            "SeasonPrice": "2100 euros per week, each additional night 300 euros.",
+            "OffSeason": "October to May – minimum stay of four days",
+            "OffSeasonPrice": "1500 euros per week or 215 euros per night",
+            "Additional": "If you are interested in renting and connecting both gites for a large group there will be a discount depending on the number of people and length of stay. Contact us for further details."
+        
         }
     },
     "Nav": {

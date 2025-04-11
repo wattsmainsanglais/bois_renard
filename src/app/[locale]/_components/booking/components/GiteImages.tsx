@@ -115,7 +115,7 @@ export default function GiteImages({images, width, route}: {images: string[], wi
                         src={images[active]}
                         alt='gite image'
                         width={width * 3}
-                        height={width * 3}
+                        height={width * 3 }
                         onClick={handleClose}
 
                     />

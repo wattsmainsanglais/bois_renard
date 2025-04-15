@@ -7,6 +7,7 @@ import Link from "next/link"
 export default async function Booking(){
 
   const t = await getTranslations("Booking")
+  const f = await getTranslations("Facilities")
 
     return(
         <div id="Booking" className="flex flex-col items-center space-y-2 bg-forestgreen opacity-85 text-white p-3 md:p-8 lg:p-10">
@@ -55,6 +56,13 @@ export default async function Booking(){
                         </div>
                     </div>
                 </div> 
+            </div>
+
+            <h1 className="pt-3 md:pt-8 lg:pt-10 font-bold text-xl">{f("Title")}</h1>
+            <div className="flex flex-col gap-2 w-full p-8 z-5 bg-white text-forestgreen rounded-md">
+                <p>{f("P1")} {f("P2")}</p>
+                <p>{f("P3")}</p>
+
             </div>
         </div>
 

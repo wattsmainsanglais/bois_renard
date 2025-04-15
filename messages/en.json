@@ -5,6 +5,19 @@
         "P2": "There are two family friendly gites, for holiday rental or longer stays, set on two hectares of land. The smaller gite has two double bedrooms and two shower rooms. The larger one has four double bedrooms and two shower rooms. The two gites can be connected for one large group booking. Subject to availability, two additional bedrooms on the ground floor with an extra bathroom can be accessed via the large gite. Each gite has a private front garden with a dining table and seating.",
         "P3": "Outside the gites share a lovely, heated swimming pool, a games barn, summer kitchen terrasse and children’s play area. There are large open fields for children to run around and many shaded seating areas for peace and relaxation."
     },
+    "Activities": {
+        "Title": "Activities in the area",
+        "1": "Alpacas – 5 minutes",
+        "2": "Horse riding – 5 minutes",
+        "3": "Monkey Park – 40 minutes",
+        "4": "Riverside picnics – Civray and Villefagnan both 15 minutes",  
+        "5": "Rejeillant for kayaking, river swimming and picnics 20 minutes",
+        "6": "Angouleme lakes with beach, inflatable water course and park 45 minutes",
+        "7": "Aquascope water park in Poitiers 50 minutes",
+        "8": "Cognac / Saintes – 50 minutes",
+        "9": "The coast – 90 minutes to La Rochelle or Royan",
+        "10": "Bordeaux – 2 hours"
+    },
     "Booking": {
         "Title": "Booking",
         "P1": "We have two gites. Both have been renovated to maintain the original features and countryside style where possible, combined with the comforts of a modern day home.",
@@ -13,6 +26,13 @@
         "P4": "Bed linens, bath and pool towels, toiletries and a welcome basket are provided for each gite.",
         "P5": "Use the links to see more information about each gite and availability. To book, please use the contact form below",
         "Link_Para": "Explore our Gites here!"
+    },
+    "Facilities": {
+        "Title": "Facilities",
+        "P1": "Swimming pool – There is a lovely 11 x 5 metre heated swimming pool with a tiled terrace for sun loungers and a lawned area for picnic blankets, all safely fenced with child security gates.",
+        "P2": "A summer kitchen terrace with bbq, pizza oven and picnic benches overlooking a children’s play area with trampoline, climbing frame, swings and sand pit.",
+        "P3": "The large barn has various games, including a pool table, table tennis, table football and darts. A host of board games, books and fun items are stocked in cupboards with a long table and chairs to gather around. A mezzanine area has old comfortable sofas for chatting, gaming or watching movies."
+
     },
     "Contact": {
         "Title": "Contact us",

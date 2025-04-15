@@ -25,7 +25,8 @@ module.exports = {
       rose: colors.rose,
       white: colors.white,
       slate: colors.slate,
-      'orange' : '#da5b41'
+      'orange' : '#da5b41',
+      blue: colors.sky
       
     },
   },

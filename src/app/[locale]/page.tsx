@@ -5,6 +5,7 @@ import ContactForm from "./_components/contact/ContactForm";
 import CarouselWrapper from "./_components/carousel/Carousel";
 import About from "./_components/about/About";
 import Footer from "./_components/footer/Footer";
+import Activities from "./_components/activities/Activities";
 
 import GiteWrapper from "./_components/booking/GiteWrapper";
 import { Params } from "next/dist/server/request/params";
@@ -49,6 +50,8 @@ export default async function Home({params}: LayoutProps) {
           <GiteWrapper />
           
           <ContactForm t={t} />
+
+          <Activities /> 
 
           </div>
       </div>

@@ -13,7 +13,7 @@ export default async function NavBar({locale, route}: {locale: string, route?: s
 
     const t = await getTranslations("Nav.Navlist")
     
-    const navList: NavList[] = [{title: t("About"), id: 'About'}, {title: t("Contact"), id: 'Contact'}, {title: t("Booking"), id: 'Booking'}, {title: t("Faq"), id: 'Faq'},  {title: t("Gallery"), id: 'Gallery'}];
+    const navList: NavList[] = [{title: t("About"), id: 'About'}, {title: t("Contact"), id: 'Contact'}, {title: t("Booking"), id: 'Booking'}, {title: t("Activities"), id: 'Activities'},  {title: t("Gallery"), id: 'Gallery'}];
 
     return (
    

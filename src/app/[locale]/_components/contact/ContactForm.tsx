@@ -4,6 +4,7 @@ import { useRef, useState } from "react"
 import { submitContactForm } from "../../_lib/submitContactForm"
 import { SubmitButton } from "../buttons/SubmitButton"
 import {FaWhatsapp, FaPhone} from "react-icons/fa"
+import { GrSend } from "react-icons/gr";
 
 import {
     Card,
@@ -67,7 +68,7 @@ export default function ContactForm({t}: {t: {[key: string]: string}}  ) {
                   
 
 
-                    <SubmitButton>Send</SubmitButton>
+                    <SubmitButton><GrSend /></SubmitButton>
                 </form>
 
             </CardContent>

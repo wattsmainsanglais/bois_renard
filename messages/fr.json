@@ -1,11 +1,12 @@
 {
-    "About": {
+"About": {
         "Title": "Bienvenue",
-        "P1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "P2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-    },
-    "Activities": {
+        "P1": "Bienvenue aux Gîtes de Bois Renard, une authentique ferme charentaise datant des années 1840, située dans le village rural de Lorigné, en Nouvelle-Aquitaine, dans le sud-ouest de la France. Notre petit hameau, Bois Renard, se trouve entre les villes de marché de Sauzé-Vaussais et Chef-Boutonne, entouré de champs et de forêts, à seulement cinq minutes en voiture de toutes les commodités : supermarchés, pharmacies, restaurants, bars et boulangeries.",
+        "P2": "Nous proposons deux gîtes familiaux, disponibles à la location pour des vacances ou des séjours de plus longue durée, sur un terrain de deux hectares. Le plus petit gîte dispose de deux chambres doubles et de deux salles d’eau. Le plus grand comprend quatre chambres doubles et deux salles d’eau également. Il est possible de relier les deux gîtes pour accueillir un grand groupe. Sous réserve de disponibilité, deux chambres supplémentaires au rez-de- chaussée avec une salle d’eau peuvent être ajoutées au grand gîte. Chaque gîte possède un jardin privé à l’avant, équipé d’une table à manger et d’un coin salon.",
+        "P3": "À l’extérieur, les deux gîtes partagent une belle piscine chauffée, une grange aménagée en salle de jeux, une terrasse avec cuisine d’été, ainsi qu’une aire de jeux pour enfants. De grands espaces ouverts permettent aux enfants de jouer librement, tandis que de nombreux coins ombragés offrent calme et détente.",
+        "P4": "Soyez patient avec nous, car le travail est en cours, des photos seront ajoutées au fur et à mesure!"
+},
+"Activities": {
         "Title": "Activities in the area",
         "1": "Alpacas – 5 minutes",
         "2": "Horse riding – 5 minutes",
@@ -17,8 +18,8 @@
         "8": "",
         "9": "",
         "10": ""
-    },
-    "Booking": {
+},
+"Booking": {
         "Title": "Reservation",
         "P1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
         "P2": "Veuillez vérifier la disponibilité en utilisant les calendriers ci-dessous",
@@ -26,27 +27,27 @@
         "P4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proiden",
         "P5": "Tba",
         "Link_Para": "Explore our Gites here!"
-    },
-    "Facilities": {
+},
+"Facilities": {
         "Title": "Facilities",
         "P1": "",
         "P2": "",
         "P3": ""
 
-    },
-    "Contact": {
+},
+"Contact": {
         "Title": "Contactez Nous",
         "Name": "Nom",
         "Email": "Mail",
         "Tel": "Telephone",
         "Message": "Message"
-    },
-    "Gites": {
+},
+"Gites": {
         "foxcottage": {
-            "Desc": "tba",
+            "Desc": "Fox Cottage est le plus petit des deux gîtes. Il dispose d’une entrée par le jardin avant, donnant sur un salon confortable avec un sol en dalles d’origine et un poêle à bois, ou par l’arrière, menant à une salle de douche du rez-de-chaussée et à une cuisine entièrement équipée avec coin repas. À l’étage, vous trouverez une chambre double avec lit 160x200, et un demi-niveau plus haut, une seconde chambre double avec lit 160x200 ainsi qu’une deuxième salle de douche. Une petite mezzanine située au-dessus de la première chambre peut accueillir un lit simple supplémentaire ou servir d’espace de jeux pour enfants.",
             "Tarif": "Tarifs",
             "Sleep": "Sleeps 4/5",
-            "Season": "Mid-June to Mid-September – minimum stay of one week",
+            "Season": "Mid-Juin to Mid-Septembre – minimum stay of one week",
             "SeasonPrice": "1050 euros per week, each additional night 150 euros.",
             "OffSeason": "October to May – minimum stay of four days",
             "OffSeasonPrice": "800 euros per week or 115 euros per night",
@@ -54,29 +55,29 @@
 
         },
         "castorslodge": {
-            "Desc": "tba",
+            "Desc": "Castors Lodge est notre grand gîte. Il s’ouvre sur un hall d’entrée menant à un spacieux salon/salle à manger avec parquet, télévision et grand feu de bois. Ce dernier communique avec une cuisine entièrement équipée, un garde-manger/buanderie et des toilettes au rez- de-chaussée. Le hall d’entrée et la cuisine disposent de portes donnant à la fois sur le jardin privé à l’avant et sur les espaces partagés à l’arrière. À l’étage, vous trouverez quatre chambres et deux salles d’eau : une chambre double avec lit 180x200, une chambre avec deux lits simples (90x200), ainsi qu’une salle de douche commune dans chaque aile du palier.",
             "Tarif": "Tarifs",
             "Sleep": "Sleeps 8",
-            "Season": "Mid-June to Mid-September – minimum stay of one week",
+            "Season": "Mi-Juin to Mid-Septembre – minimum stay of one week",
             "SeasonPrice": "2100 euros per week, each additional night 300 euros.",
             "OffSeason": "October to May – minimum stay of four days",
             "OffSeasonPrice": "1500 euros per week or 215 euros per night",
             "Additional": "If you are interested in renting and connecting both gites for a large group there will be a discount depending on the number of people and length of stay. Contact us for further details."
         
         }
-    },
-    "Nav": {
+},
+"Nav": {
         "Navlist": {
             "About": "A Propos",
             "Contact": "Contacter",
             "Booking": "Reservation",
             "Gallery": "Gallerie",
-            "Faq": "Faq"
+            "Activities": "Activities"
         }
-    },  
-    "Footer": {
+},  
+"Footer": {
         
 
-    }
+ }
 
 }

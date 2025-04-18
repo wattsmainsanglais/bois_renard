@@ -1,4 +1,4 @@
-import { TranslationStrings } from "../../../_lib/types";
+import { TranslationStrings } from "../../_lib/types";
 
 
 

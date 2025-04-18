@@ -1,19 +1,18 @@
 'use client'
 
-import { StaticImageData } from "next/image";
-import { Images } from "./giteImagesFolder";
+
 import {
     Dialog,
-    DialogContent,
+    
     DialogTrigger,
   } from "@/components/ui/dialog"
 
 import  Image from "next/image";
 
-import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog";
+
 import { Dispatch, SetStateAction, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 

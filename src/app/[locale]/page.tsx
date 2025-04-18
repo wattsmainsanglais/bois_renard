@@ -1,5 +1,4 @@
-import Image from "next/image";
-import GCalendar from "./_components/booking/Calendar";
+
 import Splash from "./_components/splash/Splash";
 import ContactForm from "./_components/contact/ContactForm";
 import CarouselWrapper from "./_components/carousel/Carousel";
@@ -8,7 +7,7 @@ import Footer from "./_components/footer/Footer";
 import Activities from "./_components/activities/Activities";
 
 import GiteWrapper from "./_components/booking/GiteWrapper";
-import { Params } from "next/dist/server/request/params";
+
 
 import { getTranslations } from "next-intl/server";
 

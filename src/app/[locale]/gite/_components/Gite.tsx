@@ -1,14 +1,14 @@
 'use client'
 
-import GiteDescription from "./components/GiteDescription";
+import GiteDescription from "./GiteDescription";
 import GCalendar from "./Calendar";
-import GiteImages from "./components/GiteImages";
+import GiteImages from "./GiteImages";
 
 import { TranslationStrings } from "../../_lib/types"
 import { Envs } from "../../_lib/types";
 
 import { useState } from "react";
-import {images} from './components/giteImagesFolder'
+import {images} from './giteImagesFolder'
 
 
 export default function Gite({gt, envs, route}: {gt: TranslationStrings, envs: Envs, route: string | undefined}){
@@ -28,7 +28,7 @@ return (
                 <GiteImages images={route === 'Fox Cottage' ? images.imagesFox: images.imagesCastor} route={route ? route : 'Untitled'} width={128} />
             </div>
             <div className="lg:col-start-2 lg:col-end-2 lg:row-span-2 bg-slate-300 flex flex-col items-center align-center justify-center rounded-md md:ml-1">
-                <GCalendar bgcolor="emerald-700" api={envs.api2} calendarId={envs.calendarId2} name={route ? route : 'Untitled'} />:
+                <GCalendar bgcolor="emerald-700" api={route === 'Fox Cottage' ? envs.api1 :envs.api2} calendarId={route === 'Fox Cottage' ? envs.calendarId : envs.calendarId2} name={route ? route : 'Untitled'} />:
                 
             </div>
 

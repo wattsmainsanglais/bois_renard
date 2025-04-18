@@ -1,12 +1,12 @@
 
-import { MessageKeys, NamespaceKeys, NestedKeyOf, useTranslations } from "next-intl"
+
 import { getTranslations } from "next-intl/server"
 import { Envs } from "../../_lib/types"
 import { TranslationStrings } from "../../_lib/types"
 import Link from "next/link"
 import { RxHome } from "react-icons/rx"
 
-import Gite from "../../_components/booking/Gite"
+import Gite from "../_components/Gite"
 import NavBar from "../../_components/navigation/NavBar"
 
 

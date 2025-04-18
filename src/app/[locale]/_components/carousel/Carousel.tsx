@@ -1,18 +1,7 @@
 import Image from "next/image"
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
 
-import { ImageList, ImageListItem } from '@mui/material';
-
-import { Card, CardContent } from "@/components/ui/card"
-
-import GiteImages from "../booking/components/GiteImages";
+import GiteImages from "../../gite/_components/GiteImages";
 
 
 const carouselImages = [

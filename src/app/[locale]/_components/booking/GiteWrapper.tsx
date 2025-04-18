@@ -1,8 +1,8 @@
 
 
-import { Messages } from "@/global"
+
 import { TranslationStrings } from "../../_lib/types"
-import Gite from "./Gite"
+
 import { useTranslations } from "next-intl"
 import Booking from "./components/Booking"
 

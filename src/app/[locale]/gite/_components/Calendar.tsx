@@ -2,12 +2,10 @@
 
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
-import { Calendar } from '@fullcalendar/core';
-import bootstrap5Plugin from '@fullcalendar/bootstrap5';
+
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
-//import 'bootstrap/dist/css/bootstrap.css';
-//import 'bootstrap-icons/font/bootstrap-icons.css'
+
 
 
 export default function GCalendar({bgcolor, api, calendarId, name}: {bgcolor: string, api: string|undefined , calendarId: string | undefined, name: string}) {

@@ -19,7 +19,7 @@ return (
     <div className="w-full flex flex-col items-center pt-5">
         
        
-        <div className="w-full flex flex-col  lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:h-screen ">
+        <div className="w-full flex flex-col  lg:grid lg:grid-cols-2 lg:grid-rows-2 ">
             <div className="flex w-1/1 lg:col-start-1 lg:col-end-1 lg:row-span-1 bg-slate-300 rounded-md">
                 <GiteDescription t={gt} title={route ? route : 'Untitled'} />
                 

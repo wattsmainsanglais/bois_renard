@@ -84,9 +84,14 @@ export default function ContactForm({t}: {t: {[key: string]: string}}  ) {
                         <MailIcon />
                         <p>welcome@giteduboisrenard.fr</p>
                     </div>
+                
+                
+                    {error? <p className="text-red">{error}</p>:null}
+                    {message? <p>{message}</p>:null}
                 </div>
-                {error? <p className="text-red">{error}</p>:null}
-                {message? <p>{message}</p>:null}
+               
+                
+                
             </CardFooter>
         </Card>
         </div>  

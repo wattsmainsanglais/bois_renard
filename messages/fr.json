@@ -10,29 +10,29 @@
         "Title": "Activities in the area",
         "1": "Alpacas – 5 minutes",
         "2": "Horse riding – 5 minutes",
-        "3": "",
-        "4": "",  
-        "5": "",
-        "6": "",
-        "7": "",
-        "8": "",
-        "9": "",
-        "10": ""
+        "3": "Vallee de singe - 40 minutes",
+        "4": "Pique-niques au bord de la rivière – Civray et Villefagnan à 15 minutes",  
+        "5": "Rejeillant pour kayak, baignade en rivière et pique-nique à 20 minutes",
+        "6": "Les lacs d'Angoulême avec plage, parcours aquatique gonflable et parc à 45 minutes",
+        "7": "Parc aquatique Aquascope à Poitiers à 50 minutes",
+        "8": "Cognac / Saintes – 50 minutes",
+        "9": "La côte – 90 minutes jusqu'à La Rochelle ou Royan",
+        "10": "Bordeaux - 2 heures"
 },
 "Booking": {
         "Title": "Reservation",
-        "P1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
-        "P2": "Veuillez vérifier la disponibilité en utilisant les calendriers ci-dessous",
-        "P3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proiden",
-        "P4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proiden",
-        "P5": "Tba",
-        "Link_Para": "Explore our Gites here!"
+        "P1": "Nous proposons deux gîtes, tous deux rénovés avec soin afin de préserver les caractéristiques d’origine et le charme campagnard, tout en offrant le confort moderne.",
+        "P2": "Les cuisines sont entièrement équipées : four électrique, plaque de cuisson, micro-ondes, réfrigérateur-congélateur, lave-vaisselle, lave-linge, bouilloire, grille-pain et machine à café. Une large sélection d’ustensiles de cuisine, vaisselle, verres et couverts est mise à disposition. Une liste complète de l’équipement est disponible sur demande avant la réservation.",
+        "P3": "Chaque gîte dispose d’un petit jardin privé, clos, orienté à l’ouest, avec une salle à manger extérieure idéale pour un apéritif ou un repas en plein air au coucher du soleil.",
+        "P4": "Le linge de lit, les serviettes de bain et de piscine, les articles de toilette, ainsi qu’un panier de bienvenue sont fournis.",
+        "P5": "Utilisez les liens pour en savoir plus sur chaque gîte et consulter les disponibilités. Pour réserver, veuillez utiliser le formulaire de contact ci-dessous.",
+        "Link_Para": "Explorez nos Gites ici!"
 },
 "Facilities": {
         "Title": "Facilities",
-        "P1": "",
-        "P2": "",
-        "P3": ""
+        "P1": "Piscine – La belle piscine chauffée de 11 x 5 mètres dispose d'une terrasse carrelée pour les chaises longues et d'un espace gazonné pour les couvertures de pique-nique, le tout clôturé et sécurisé par des barrières de sécurité pour enfants.",
+        "P2": "Une terrasse avec cuisine d'été, barbecue, four à pizza et bancs de pique-nique, donne sur une aire de jeux pour enfants avec trampoline, portique, balançoires et bac à sable.",
+        "P3": "La grande grange dispose de divers jeux, dont un billard, une table de ping-pong, un baby-foot et des fléchettes. De nombreux jeux de société, livres et autres articles de loisirs sont rangés dans des placards, autour d'une longue table et de chaises pour se réunir. Une mezzanine est équipée de vieux canapés confortables pour discuter, jouer ou regarder des films."
 
 },
 "Contact": {

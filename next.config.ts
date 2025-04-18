@@ -10,7 +10,7 @@ const cspHeader = `
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://bois-renard.vercel.app/ https://giteduboisrenard.fr https://www.giteduboisrenard.fr;
     connect-src data: https://maps.googleapis.com https://www.googleapis.com https://maps.gstatic.com https://www.gstatic.com http://localhost:3000 https://localhost:3000 ws://localhost:3000 https://bois-renard.vercel.app/ https://giteduboisrenard.fr https://www.giteduboisrenard.fr;
     img-src 'self' 'unsafe-inline' blob: data: https://maps.googleapis.com  https://maps.gstatic.com https://giteduboisrenard.fr https://www.giteduboisrenard.fr;
-    font-src 'self' https://fonts.gstatic.com data:application;
+    font-src 'self' https://fonts.gstatic.com data:application https://localhost:3000 https://bois-renard.vercel.app/ https://giteduboisrenard.fr https://www.giteduboisrenard.fr;
     worker-src blob:;
     object-src 'none';
     base-uri 'self';

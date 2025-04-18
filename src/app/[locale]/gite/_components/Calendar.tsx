@@ -27,6 +27,7 @@ export default function GCalendar({bgcolor, api, calendarId, name}: {bgcolor: st
           eventColor={bgcolor}
           contentHeight={350}
           aspectRatio={2}
+          titleFormat={{year:'numeric', month: 'short'}}
           themeSystem='default'
           buttonIcons={false}
           googleCalendarApiKey={api}

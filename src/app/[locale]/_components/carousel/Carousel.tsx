@@ -11,9 +11,10 @@ const carouselImages = [
 export default function CarouselWrapper(){
 
     return(
-
+        <div id="Gallery">
         <GiteImages images={carouselImages} width={200} />
-    /*
+        </div>
+        /*
         <ImageList sx={{ width: 1000, height: 450 }} variant="woven" cols={5} gap={8}>
             {carouselImages.map((item, index) => (
             <ImageListItem key={index}>

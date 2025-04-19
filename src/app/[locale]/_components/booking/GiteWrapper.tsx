@@ -21,7 +21,7 @@ export default function GiteWrapper(){
 
 
     return (
-        <div id="Gites" className="w-screen bg-forestgreen p-2 flex flex-col justify-center">
+        <div id="Gites" className="w-screen bg-forestgreen pt-2 pb-2 flex flex-col justify-center">
             <Booking />
             {/*<Gite gt={gt} envs={envs}  />*/}
         </div>

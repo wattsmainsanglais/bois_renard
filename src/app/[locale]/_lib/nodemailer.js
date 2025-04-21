@@ -76,7 +76,7 @@ export async function sendMail(mailOptions){
     
         
         transporter.sendMail(mailOptionsReturn, function(err, info) {
-
+            console.log(process.env.USER, process.env.USERPASS, process.env.HOST)
             if (err) {
                 
                 resolve ( {

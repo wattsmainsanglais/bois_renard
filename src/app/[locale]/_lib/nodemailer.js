@@ -52,8 +52,8 @@ export async function sendMail(mailOptions){
 
         let transporter = nodemailer.createTransport({
             host: process.env.HOST,
-            port: 587,
-            secure: false,
+            port: 465,
+            secure: true,
             auth: {
                 user: process.env.USER,
                 pass: process.env.USERPASS,

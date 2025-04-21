@@ -73,7 +73,7 @@ export default function ContactForm({t}: {t: {[key: string]: string}}  ) {
 
             </CardContent>
             
-            <CardFooter>
+            <CardFooter className="flex flex-col items-center">
                 <div className="flex flex-col lg:flex-row w-1/1 gap-4">
                     <div className="flex gap-2">
                         <FaPhone size={24} />
@@ -86,8 +86,12 @@ export default function ContactForm({t}: {t: {[key: string]: string}}  ) {
                     </div>
                 
                 
-                    {error? <p className="text-red">{error}</p>:null}
-                    {message? <p>{message}</p>:null}
+                  
+                </div>
+                <div>
+                    {error? <p className="text-orange">{error}</p>:null}
+                    {message? <p className="text-forestgreen">{message}</p>:null}
+
                 </div>
                
                 

@@ -19,7 +19,7 @@ export async function sendMail(mailOptions){
      <br>
     <p>Best wishes,</p>
      <br>
-    <p> </p>
+    <p>Paul & Natasha </p>
      <br>
      `
     
@@ -40,8 +40,7 @@ export async function sendMail(mailOptions){
         html: clientText,
         attachments: [
             /*{
-                filename: 'service-options.pdf',
-                path: 'https://www.thepopupweddingcreche.fr/images/service-options.pdf'
+                
             },*/
           
 
@@ -51,19 +50,19 @@ export async function sendMail(mailOptions){
 
     return new Promise((resolve, reject)=> {
 
-        /*let transporter = nodemailer.createTransport({
+        let transporter = nodemailer.createTransport({
             host: process.env.HOST,
             port: 587,
             secure: false,
             auth: {
                 user: process.env.USER,
-                pass: process.env.PASS,
+                pass: process.env.USERPASS,
                 
             },
-        })*/
+        })
 
           // transporter 2 is for testing
-    let transporter2 = nodemailer.createTransport({
+   /* let transporter2 = nodemailer.createTransport({
         host: 'smtp.ethereal.email',
         port: 587,
         secure: false, // true for 465, false for other ports
@@ -72,10 +71,11 @@ export async function sendMail(mailOptions){
             pass: 'd3G4sKKTm2Jw5pJt7H'
         }
     });
+    */
 
     
         
-        transporter2.sendMail(mailOptionsReturn, function(err, info) {
+        transporter.sendMail(mailOptionsReturn, function(err, info) {
 
             if (err) {
                 
@@ -93,7 +93,7 @@ export async function sendMail(mailOptions){
             
          })
 
-         transporter2.sendMail(mailOptionsClient, function(error, info) {
+         transporter.sendMail(mailOptionsClient, function(error, info) {
             if (error) {
                 console.log('client' + error)
             } else {
@@ -105,17 +105,4 @@ export async function sendMail(mailOptions){
 
 }
 
-/* <p>Thank you ${name} for contacting us here at The Pop-Up Wedding Crèche..</p>
-    <br>
-    <p>We have received your email and aim to reply to you within three working days.</p>
-     <br>
-    <p>If this is an initial enquiry please read our information brochure attached to this email, so you can further understand our services. Please fill out our initial enquiry form which gives us the details needed to provide you with a quote ( link at the bottom of this email).</p>
-     <br>
-    <p>Please follow us on Instagram to see what our wonderful team have been up to: @popupweddingcreche</p>
-     <br>
-    <p>Thank you so much and we look forward to speaking to you,</p>
-     <br>
-    <p>Best wishes,</p>
-     <br>
-    <p>Sinead</p>
-     <br>*/
+

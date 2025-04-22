@@ -7,7 +7,7 @@
         "P4": "Soyez patient avec nous, car le travail est en cours, des photos seront ajoutées au fur et à mesure!"
 },
 "Activities": {
-        "Title": "Activities in the area",
+        "Title": "Activités dans la région",
         "1": "Alpacas – 5 minutes",
         "2": "Horse riding – 5 minutes",
         "3": "Vallee de singe - 40 minutes",
@@ -29,7 +29,7 @@
         "Link_Para": "Explorez nos Gites ici!"
 },
 "Facilities": {
-        "Title": "Facilities",
+        "Title": "Installations",
         "P1": "Piscine – La belle piscine chauffée de 11 x 5 mètres dispose d'une terrasse carrelée pour les chaises longues et d'un espace gazonné pour les couvertures de pique-nique, le tout clôturé et sécurisé par des barrières de sécurité pour enfants.",
         "P2": "Une terrasse avec cuisine d'été, barbecue, four à pizza et bancs de pique-nique, donne sur une aire de jeux pour enfants avec trampoline, portique, balançoires et bac à sable.",
         "P3": "La grande grange dispose de divers jeux, dont un billard, une table de ping-pong, un baby-foot et des fléchettes. De nombreux jeux de société, livres et autres articles de loisirs sont rangés dans des placards, autour d'une longue table et de chaises pour se réunir. Une mezzanine est équipée de vieux canapés confortables pour discuter, jouer ou regarder des films."
@@ -46,18 +46,18 @@
         "foxcottage": {
             "Desc": "Fox Cottage est le plus petit des deux gîtes. Il dispose d’une entrée par le jardin avant, donnant sur un salon confortable avec un sol en dalles d’origine et un poêle à bois, ou par l’arrière, menant à une salle de douche du rez-de-chaussée et à une cuisine entièrement équipée avec coin repas. À l’étage, vous trouverez une chambre double avec lit 160x200, et un demi-niveau plus haut, une seconde chambre double avec lit 160x200 ainsi qu’une deuxième salle de douche. Une petite mezzanine située au-dessus de la première chambre peut accueillir un lit simple supplémentaire ou servir d’espace de jeux pour enfants.",
             "Tarif": "Tarifs",
-            "Sleep": "Sleeps 4/5",
-            "Season": "Mid-Juin to Mid-Septembre – minimum stay of one week",
-            "SeasonPrice": "1050 euros per week, each additional night 150 euros.",
-            "OffSeason": "October to May – minimum stay of four days",
-            "OffSeasonPrice": "800 euros per week or 115 euros per night",
-            "Additional": "If you are interested in renting and connecting both gites for a large group there will be a discount depending on the number of people and length of stay. Contact us for further details."
+            "Sleep": "4/5 couchages",
+            "Season": "mi-juin à mi-septembre – séjour minimum d'une semaine",
+            "SeasonPrice": "1050 euros par semaine, 150 euros par nuit supplémentaire.",
+            "OffSeason": "octobre à mai – séjour minimum de quatre jours",
+            "OffSeasonPrice": "800 euros par semaine ou 115 euros par nuit",
+            "Additional": "Si vous souhaitez louer et relier les deux gîtes pour un grand groupe, une réduction sera appliquée en fonction du nombre de personnes et de la durée du séjour. Contactez-nous pour plus d'informations."
 
         },
         "castorslodge": {
             "Desc": "Castors Lodge est notre grand gîte. Il s’ouvre sur un hall d’entrée menant à un spacieux salon/salle à manger avec parquet, télévision et grand feu de bois. Ce dernier communique avec une cuisine entièrement équipée, un garde-manger/buanderie et des toilettes au rez- de-chaussée. Le hall d’entrée et la cuisine disposent de portes donnant à la fois sur le jardin privé à l’avant et sur les espaces partagés à l’arrière. À l’étage, vous trouverez quatre chambres et deux salles d’eau : une chambre double avec lit 180x200, une chambre avec deux lits simples (90x200), ainsi qu’une salle de douche commune dans chaque aile du palier.",
             "Tarif": "Tarifs",
-            "Sleep": "Sleeps 8",
+            "Sleep": "8 couchages",
             "Season": "Mi-Juin to Mid-Septembre – minimum stay of one week",
             "SeasonPrice": "2100 euros per week, each additional night 300 euros.",
             "OffSeason": "October to May – minimum stay of four days",

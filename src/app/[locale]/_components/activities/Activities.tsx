@@ -20,19 +20,19 @@ export default function Activities(){
 
             <h1 className="font-bold text-xl">{t("Title")}</h1>
             <div className='flex flex-col lg:flex-row justify-center items-center gap-2 w-full  '>
-               <div className='bg-white p-5 rounded-md opacity-85 h-auto lg:h-72 flex flex-col justify-center items-start lg:items-center w-full lg:w-3/5'>
+               <div className='bg-white p-4 rounded-md opacity-85 h-auto lg:h-72 flex flex-col justify-center items-start lg:items-center w-full lg:w-3/5'>
                 <span className='p-2'><SiAnimalplanet size={48} color='gray' /></span>
                 {animals.map((a, index) => (
                     <p className='p-1'  key={index}>{'>'} {a}</p>
                 ))}
                </div>
-               <div className='bg-white p-5 rounded-md opacity-85 h-auto lg:h-72 flex flex-col justify-center items-start lg:items-center w-full lg:w-4/5'>
+               <div className='bg-white p-4 rounded-md opacity-85 h-auto lg:h-72 flex flex-col justify-center items-start lg:items-center w-full lg:w-4/5'>
                 <span className='p-2'><FaWater color='blue' size={32}  /></span>
                 {water.map((a, index) => (
                     <p className='p-1'  key={index}>{'>'} {a}</p>
                 ))}
                </div>
-               <div className='bg-white p-5 rounded-md opacity-85 h-auto lg:h-72 flex flex-col justify-center items-start lg:items-center w-full lg:w-3/5'>
+               <div className='bg-white p-4 rounded-md opacity-85 h-auto lg:h-72 flex flex-col justify-center items-start lg:items-center w-full lg:w-3/5'>
                <span className='p-2'><FaCar color='green' size={32}  /></span>
                 {dayTrips.map((a, index) => (
                     <p className='p-1' key={index}>{'>'} {a}</p>

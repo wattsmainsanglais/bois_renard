@@ -7,15 +7,14 @@ export async function sendMail(mailOptions){
 
     const clientText = 
     
-    `<p>Thank you ${name} for contacting us here at Le Gite du Bois Renard..</p>
+    `<p>Thank you ${name} for contacting us here at Le Gite du Bois Renard.</p>
     <br>
     <p>We have received your email and aim to reply to you shortly </p>
      <br>
     <p.</p>
      <br>
     <p></p>
-     <br>
-    <p>Thank you so much and we look forward to speaking to you </p>
+     
      <br>
     <p>Best wishes,</p>
      <br>
@@ -27,9 +26,9 @@ export async function sendMail(mailOptions){
    
 
     let mailOptionsReturn = {
-        from: email,
+        from: process.env.USER, 
         to: process.env.USER,
-        subject: 'New enquiry',
+        subject: `New enquiry from ${email}`, 
         text: 'New enquiry from...  ' + name + ', telephone: ' + tel + ' message: ' + message + ' email: ' + email
     }
 
@@ -51,9 +50,20 @@ export async function sendMail(mailOptions){
     return new Promise((resolve, reject)=> {
 
         let transporter = nodemailer.createTransport({
-            host: process.env.HOST,
+            host: process.env.HOST, // mail.papamail.net
             port: 465,
             secure: true,
+            auth: {
+                user: process.env.USER, // welcome@giteduboisrenard.fr
+                pass: process.env.USERPASS, // not provding password but 100% correct
+                
+            },
+        })
+
+        let transporterInbound = nodemailer.createTransport({
+            host: process.env.HOST,
+            port: 993,
+            secure: false,
             auth: {
                 user: process.env.USER,
                 pass: process.env.USERPASS,
@@ -76,7 +86,8 @@ export async function sendMail(mailOptions){
     
         
         transporter.sendMail(mailOptionsReturn, function(err, info) {
-
+            console.log(process.env.USER, process.env.USERPASS, process.env.HOST)
+            console.log(err, info)
             if (err) {
                 
                 resolve ( {
@@ -97,7 +108,7 @@ export async function sendMail(mailOptions){
             if (error) {
                 console.log('client' + error)
             } else {
-                console.log('sent to client')
+                console.log('sent to client', info)
             }
         })
     })  

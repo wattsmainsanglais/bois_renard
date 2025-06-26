@@ -23,7 +23,7 @@ function Overlay({show, setShow}: {show: boolean, setShow: Dispatch<SetStateActi
     }
 
     return (
-        <div className="fixed inset-0 z-50 bg-forestgreen/90 w-full" style={{display: show? 'block': 'none'}} onClick={handleClose}  >
+        <div id="Overlay" className="fixed inset-0 z-50 bg-forestgreen/90 w-full" style={{display: show? 'block': 'none'}} onClick={handleClose}  >
         
         </div>
 
@@ -63,7 +63,7 @@ export default function GiteImages({images, width, route}: {images: string[], wi
     const maxLength = images.length
 
     return (
-        <div className="flex flex-wrap justify-center">
+        <div id="giteImages" className="flex flex-wrap justify-start">
             {images.map((i, index)=> (
             <Dialog key={index}>
                 <DialogTrigger asChild >
@@ -106,22 +106,22 @@ export default function GiteImages({images, width, route}: {images: string[], wi
            
                 
                 <Overlay show={show} setShow={setShow} />
-                <div id="modal" style={{display: show? 'flex': 'none'}} className="fixed left-[50%] top-[50%] z-50 w-4/5 lg:w-full max-w-lg translate-x-[-50%] translate-y-[-50%]  border bg-white p-10 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg flex flex-row justify-center items-center">
-                    <Button  className="z-50 active:text-slate-500" style={{color: active === 0 ? 'white': 'inherit'}} onClick={onPrev}><ChevronLeft /></Button> 
+                <div id="modal" style={{display: show? 'flex': 'none'}} className="fixed left-[50%] top-[50%] z-50 w-4/5 lg:w-1/2 translate-x-[-50%] translate-y-[-50%]  border bg-white p-10 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg justify-between items-center">
+                    <Button  className="z-50 active:text-slate-500 m-2" style={{color: active === 0 ? 'white': 'inherit'}} onClick={onPrev}><ChevronLeft /></Button> 
                       
                           
                     <Image 
                         src={images[active]}
                         alt='gite image'
-                        width={width* 3}
-                        height={ width * 3}
+                        width={width * 6 }
+                        height={width * 3}
                         onClick={handleClose}
 
                     />
                           
 
                      
-                    <Button className="z-50 active:text-slate-500" style={{color: active === maxLength - 1 ? 'white': 'inherit'}} onClick={onNext}><ChevronRight  /></Button> 
+                    <Button className="z-50 active:text-slate-500 m-2" style={{color: active === maxLength - 1 ? 'white': 'inherit'}} onClick={onNext}><ChevronRight  /></Button> 
                 </div> 
                 
          

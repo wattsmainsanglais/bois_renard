@@ -5,14 +5,14 @@ import GiteImages from "../../gite/_components/GiteImages";
 
 
 const carouselImages = [
-    '/gites_pics/Outside/ou9.jpg' , '/gites_pics/Outside/ou2.jpg' ,'/gites_pics/Outside/ou3.jpg' ,'/gites_pics/Outside/ou14.jpg', '/gites_pics/Outside/ou11.jpg', '/gites_pics/Outside/ou1.jpg', '/gites_pics/Outside/ou2.jpg','/gites_pics/Outside/ou4.jpg','/gites_pics/Outside/ou5.jpg','/gites_pics/Outside/ou6.jpg','/gites_pics/Outside/ou7.jpg','/gites_pics/Outside/ou8.jpg','/gites_pics/Outside/ou13.jpg','/gites_pics/Outside/ou12.jpg'
+    '/gites_pics/Outside/ou9.jpg' , '/gites_pics/Outside/ou2.jpg' ,'/gites_pics/Outside/ou3.jpg' ,'/gites_pics/Outside/ou14.jpg', '/gites_pics/Outside/ou11.jpg', '/gites_pics/Outside/ou1.jpg', '/gites_pics/Outside/ou2.jpg','/gites_pics/Outside/ou4.jpg','/gites_pics/Outside/ou5.jpg','/gites_pics/Outside/ou6.jpg','/gites_pics/Outside/ou7.jpg','/gites_pics/Outside/ou8.jpg','/gites_pics/Outside/ou13.jpg','/gites_pics/Outside/ou12.jpg','/gites_pics/Outside/ou15.jpg'
 ]
 
 export default function CarouselWrapper(){
 
     return(
-        <div id="Gallery">
-        <GiteImages images={carouselImages} width={200} />
+        <div id="Gallery" className="flex justify-center">
+        <GiteImages images={carouselImages} width={200} flow="grid-flow-col-dense" />
         </div>
         /*
         <ImageList sx={{ width: 1000, height: 450 }} variant="woven" cols={5} gap={8}>

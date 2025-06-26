@@ -63,7 +63,7 @@ export default function GiteImages({images, width, route, flow}: {images: string
     const maxLength = images.length
 
     return (
-        <div id="giteImages" className={`grid grid-cols-6 grid-rows-2 ${flow}`}>
+        <div id="giteImages" className={`grid grid-cols-2 grid-rows-6 lg:grid-cols-6 lg:grid-rows-2  ${flow}`}>
             {images.map((i, index)=> (
             <Dialog key={index}>
                 <DialogTrigger asChild >
@@ -116,13 +116,13 @@ export default function GiteImages({images, width, route, flow}: {images: string
                         width={width * 3.5 }
                         height={width * 2}
                         onClick={handleClose}
-                        objectFit="contain"
+                       
 
                     />
                           
 
                      
-                    <Button className="z-50 active:text-slate-500 m-2" style={{color: active === maxLength - 1 ? 'white': 'inherit'}} onClick={onNext}><ChevronRight  /></Button> 
+                    <Button size="sm" className="z-50 active:text-slate-500 m-2" style={{color: active === maxLength - 1 ? 'white': 'inherit'}} onClick={onNext}><ChevronRight  /></Button> 
                 </div> 
                 
          

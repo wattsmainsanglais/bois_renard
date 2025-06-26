@@ -24,7 +24,7 @@ return (
                 <GiteDescription t={gt} title={route ? route : 'Untitled'} />
                 
             </div>
-            <div className="flex align-center bg-forestgreen h-full w-1/1 pt-3 pb-1 md:p-0 lg:col-start-1 lg:col-end-1 lg:row-start-2 lg:row-span-1 ">
+            <div className="flex align-center bg-forestgreen w-1/1 pt-3 pb-1 md:p-0 lg:col-start-1 lg:col-end-1 lg:row-start-2 lg:row-span-1 ">
                 <GiteImages images={route === 'Fox Cottage' ? images.imagesFox: images.imagesCastor} route={route ? route : 'Untitled'} width={150} flow="grid-flow-row-dense"/>
             </div>
             <div className="lg:col-start-2 lg:col-end-2 lg:row-span-2 bg-slate-300 flex flex-col items-center align-center justify-center rounded-md md:ml-1">

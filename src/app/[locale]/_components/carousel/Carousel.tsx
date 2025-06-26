@@ -11,8 +11,8 @@ const carouselImages = [
 export default function CarouselWrapper(){
 
     return(
-        <div id="Gallery" className="flex justify-center">
-        <GiteImages images={carouselImages} width={200} flow="grid-flow-col-dense" />
+        <div id="Gallery" className="flex justify-center ">
+            <GiteImages images={carouselImages} width={200} flow="grid-flow-col-dense" />
         </div>
         /*
         <ImageList sx={{ width: 1000, height: 450 }} variant="woven" cols={5} gap={8}>

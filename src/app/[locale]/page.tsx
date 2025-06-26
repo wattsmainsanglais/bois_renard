@@ -42,15 +42,15 @@ export default async function Home({params}: LayoutProps) {
           <About />
           <div className="flex w-full flex-col justify-center  items-center space-y-10 ">
           
-          <CarouselWrapper />
+            <CarouselWrapper />
 
-          {/*<BookingWrapper />*/}
+            {/*<BookingWrapper />*/}
 
-          <GiteWrapper />
-          
-          <ContactForm t={t} />
+            <GiteWrapper />
+            
+            <ContactForm t={t} />
 
-          <Activities /> 
+            <Activities /> 
 
           </div>
       </div>

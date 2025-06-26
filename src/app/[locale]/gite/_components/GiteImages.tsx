@@ -63,7 +63,7 @@ export default function GiteImages({images, width, route, flow}: {images: string
     const maxLength = images.length
 
     return (
-        <div id="giteImages" className={`grid grid-cols-2 grid-rows-6 lg:grid-cols-6 lg:grid-rows-2  ${flow}`}>
+        <div id="giteImages" className={`grid grid-cols-2 grid-rows-6 lg:grid-cols-6 lg:grid-rows-2  lg:${flow}`}>
             {images.map((i, index)=> (
             <Dialog key={index}>
                 <DialogTrigger asChild >
@@ -106,7 +106,7 @@ export default function GiteImages({images, width, route, flow}: {images: string
            
                 
                 <Overlay show={show} setShow={setShow} />
-                <div id="modal" style={{display: show? 'flex': 'none'}} className="fixed left-[50%] top-[50%] z-50 w-[90%] lg:w-1/2 h-9/10 translate-x-[-50%] translate-y-[-50%]  border bg-white p-10 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg justify-between items-center">
+                <div id="modal" style={{display: show? 'flex': 'none'}} className="fixed left-[50%] top-[50%] z-50 w-[90%] lg:w-1/2 translate-x-[-50%] translate-y-[-50%] border bg-white p-5 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] rounded-lg justify-between items-center">
                     <Button  className="z-50 active:text-slate-500 m-2" style={{color: active === 0 ? 'white': 'inherit'}} onClick={onPrev}><ChevronLeft /></Button> 
                       
                           
@@ -114,7 +114,7 @@ export default function GiteImages({images, width, route, flow}: {images: string
                         src={images[active]}
                         alt='gite image'
                         width={width * 3.5 }
-                        height={width * 2}
+                        height={width * 1}
                         onClick={handleClose}
                        
 

@@ -106,8 +106,8 @@ export default function GiteImages({images, width, route, flow}: {images: string
            
                 
                 <Overlay show={show} setShow={setShow} />
-                <div id="modal"  className={` ${show? "flex" : "hidden"} fixed left-[50%] top-[50%] z-50 w-[90%] lg:w-1/2 translate-x-[-50%] translate-y-[-50%] border bg-white p-5 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] rounded-lg justify-between items-center`}>
-                    <Button  className="z-50 active:text-slate-500 m-2" style={{color: active === 0 ? 'white': 'inherit'}} onClick={onPrev}><ChevronLeft /></Button> 
+                <div id="modal"  className={` ${show? "flex" : "hidden"} fixed left-[50%] top-[50%] z-50 w-[90%] lg:w-1/2 translate-x-[-50%] translate-y-[-50%] border bg-white p-5 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] flex-col lg:flex-row rounded-lg justify-center lg:justify-between items-center`}>
+                    <Button size="sm"  className="z-50 active:text-slate-500 m-2" style={{color: active === 0 ? 'white': 'inherit'}} onClick={onPrev}><ChevronLeft /></Button> 
                       
                           
                     <Image 
@@ -116,7 +116,7 @@ export default function GiteImages({images, width, route, flow}: {images: string
                         width={width * 3.5 }
                         height={width * 1}
                         onClick={handleClose}
-                       
+                        
 
                     />
                           

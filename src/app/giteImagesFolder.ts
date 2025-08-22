@@ -1,8 +1,4 @@
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
-import ca1 from '/gite_pics/Large.ca1.jpg'
-
-import fo1 from '/gites_pics/Small/fo1.jpg'
-import { StaticImageData } from 'next/image'
+//add images here for the fox and castor carousels, note the syntax and mirror this. Images appear in the order they are listed
 
 
 export interface Images {

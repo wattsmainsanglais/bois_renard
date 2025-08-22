@@ -8,7 +8,7 @@ import { TranslationStrings } from "../../_lib/types"
 import { Envs } from "../../_lib/types";
 
 import { useState } from "react";
-import {images} from './giteImagesFolder'
+import {images} from '../../../giteImagesFolder'
 
 
 export default function Gite({gt, envs, route}: {gt: TranslationStrings, envs: Envs, route: string | undefined}){

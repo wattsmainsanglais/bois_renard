@@ -2,11 +2,9 @@ import Image from "next/image"
 
 
 import GiteImages from "../../gite/_components/GiteImages";
+import { carouselImages } from "@/src/app/carouselImages";
 
 
-const carouselImages = [
-      '/gites_pics/Outside/ou1.jpg', '/gites_pics/Outside/ou2.jpg','/gites_pics/Outside/ou4.jpg','/gites_pics/Outside/ou5.jpg','/gites_pics/Outside/ou6.jpg','/gites_pics/Outside/ou7.jpg','/gites_pics/Outside/ou8.jpg','/gites_pics/Outside/ou13.jpg','/gites_pics/Outside/ou12.jpg','/gites_pics/Outside/ou15.jpg', '/gites_pics/Outside/ou9.jpg', '/gites_pics/Outside/ou3.jpg' ,'/gites_pics/Outside/ou14.jpg', '/gites_pics/Outside/ou11.jpg',
-]
 
 export default function CarouselWrapper(){
 
